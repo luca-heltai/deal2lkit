@@ -44,14 +44,16 @@ using namespace dealii;
 
 /** Solve the problem
  *
- *  \f[ 
+ *  \f[
  *  -\nabla\cdot(kappa \nabla u) = f
  *  \f]
  */
 
-class PoissonParameters : public ParameterAcceptor {
+class PoissonParameters : public ParameterAcceptor
+{
 public:
-  virtual void declare_parameters(ParameterHandler &prm) {
+  virtual void declare_parameters(ParameterHandler &prm)
+  {
     add_parameter(prm, &n_cycles, "Number of cycles", "4");
     add_parameter(prm, &initial_refinement, "Initial refinement", "3");
   }
@@ -63,7 +65,7 @@ int main(int argc, char **argv)
 {
   Utilities::MPI::MPI_InitFinalize mpi_init(argc, argv);
 
-    // Change this if you want a three dimensional simulation
+  // Change this if you want a three dimensional simulation
   const unsigned int dim = 2;
   const unsigned int spacedim = 2;
 
@@ -92,12 +94,12 @@ int main(int argc, char **argv)
                                         1000,
                                         1e-8,
                                         linear_operator<Vector<double> >(matrix),
-                                        linear_operator<Vector<double> >(prec, matrix));
+                                        linear_operator<Vector<double> >(matrix, prec));
 
 
   ErrorHandler<1> eh;
 
-    // Generate Triangulation, DoFHandler, and FE
+  // Generate Triangulation, DoFHandler, and FE
   ParameterAcceptor::initialize("poisson.prm", "used_parameters.prm");
 
 
@@ -110,41 +112,42 @@ int main(int argc, char **argv)
   tria->refine_global(par.initial_refinement);
   QGauss<dim> quad(2*fe->degree+1);
 
-  for(unsigned int i=0; i<par.n_cycles; ++i) {
-    dh.distribute_dofs(*fe);
-    std::cout << "Cycle " << i
-    << ", cells: " << tria->n_active_cells()
-    << ", dofs: " << dh.n_dofs() << std::endl;
+  for (unsigned int i=0; i<par.n_cycles; ++i)
+    {
+      dh.distribute_dofs(*fe);
+      std::cout << "Cycle " << i
+                << ", cells: " << tria->n_active_cells()
+                << ", dofs: " << dh.n_dofs() << std::endl;
 
-    DynamicSparsityPattern dsp(dh.n_dofs());
-    DoFTools::make_sparsity_pattern (dh, dsp);
-    sparsity.copy_from(dsp);
+      DynamicSparsityPattern dsp(dh.n_dofs());
+      DoFTools::make_sparsity_pattern (dh, dsp);
+      sparsity.copy_from(dsp);
 
-    matrix.reinit (sparsity);
-    solution.reinit (dh.n_dofs());
-    rhs.reinit (dh.n_dofs());
+      matrix.reinit (sparsity);
+      solution.reinit (dh.n_dofs());
+      rhs.reinit (dh.n_dofs());
 
-    constraints.clear();
-    bcs.interpolate_boundary_values(dh, constraints);
-    constraints.close();
+      constraints.clear();
+      bcs.interpolate_boundary_values(dh, constraints);
+      constraints.close();
 
-    MatrixCreator::create_laplace_matrix(dh, quad, matrix, force, rhs, &kappa, constraints);
+      MatrixCreator::create_laplace_matrix(dh, quad, matrix, force, rhs, &kappa, constraints);
 
-          // solution = inverse*rhs;
-    
-    SparseDirectUMFPACK solver;
-    solver.initialize(matrix);
-    solver.vmult(solution, rhs);
-    constraints.distribute(solution);
+      // solution = inverse*rhs;
 
-    pdo.prepare_data_output(dh, std::to_string(i));
-    pdo.add_data_vector(solution, "solution");
-    pdo.write_data_and_clear();
+      SparseDirectUMFPACK solver;
+      solver.initialize(matrix);
+      solver.vmult(solution, rhs);
+      constraints.distribute(solution);
 
-    eh.error_from_exact(dh, solution, exact);
+      // pdo.prepare_data_output(dh, std::to_string(i));
+      // pdo.add_data_vector(solution, "solution");
+      // pdo.write_data_and_clear();
 
-    tria->refine_global(1);
-  }
+      eh.error_from_exact(dh, solution, exact);
+
+      tria->refine_global(1);
+    }
 
   eh.output_table();
   return 0;
