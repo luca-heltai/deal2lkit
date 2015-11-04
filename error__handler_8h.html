@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Deal.II Swiss Army Knife library: include/error_handler.h File Reference</title>
+<title>deal2lkit: A ToolKit library for deal.II: include/deal2lkit/error_handler.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -37,7 +37,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Deal.II Swiss Army Knife library
+   <div id="projectname">deal2lkit: A ToolKit library for deal.II
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -102,33 +102,7 @@ $(document).ready(function(){initNavTree('error__handler_8h.html','');});
 <div class="title">error_handler.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;fstream&gt;</code><br />
-<code>#include &lt;deal.II/dofs/dof_handler.h&gt;</code><br />
-<code>#include &lt;deal.II/lac/constraint_matrix.h&gt;</code><br />
-<code>#include &lt;deal.II/lac/vector.h&gt;</code><br />
-<code>#include &lt;deal.II/grid/tria.h&gt;</code><br />
-<code>#include &lt;deal.II/base/function.h&gt;</code><br />
-<code>#include &lt;deal.II/numerics/solution_transfer.h&gt;</code><br />
-<code>#include &lt;deal.II/numerics/data_out.h&gt;</code><br />
-<code>#include &lt;deal.II/base/convergence_table.h&gt;</code><br />
-<code>#include &lt;deal.II/base/logstream.h&gt;</code><br />
-<code>#include &lt;deal.II/base/config.h&gt;</code><br />
-<code>#include &lt;deal.II/base/quadrature_lib.h&gt;</code><br />
-<code>#include &lt;deal.II/base/utilities.h&gt;</code><br />
-<code>#include &lt;deal.II/grid/grid_tools.h&gt;</code><br />
-<code>#include &lt;deal.II/numerics/vector_tools.h&gt;</code><br />
-<code>#include &lt;deal.II/numerics/matrix_tools.h&gt;</code><br />
-<code>#include &lt;deal.II/fe/mapping_q.h&gt;</code><br />
-<code>#include &lt;deal.II/fe/fe.h&gt;</code><br />
-<code>#include &lt;deal.II/base/parameter_handler.h&gt;</code><br />
-<code>#include &lt;deal.II/base/conditional_ostream.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="parameter__acceptor_8h_source.html">parameter_acceptor.h</a>&quot;</code><br />
-<code>#include &lt;map&gt;</code><br />
-<code>#include &lt;cstdio&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-</div>
+
 <p><a href="error__handler_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -189,7 +163,7 @@ Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="error__handler_8h_source.html#l00049">49</a> of file <a class="el" href="error__handler_8h_source.html">error_handler.h</a>.</p>
+<p>Definition at line <a class="el" href="error__handler_8h_source.html#l00067">67</a> of file <a class="el" href="error__handler_8h_source.html">error_handler.h</a>.</p>
 
 </div>
 </div>
@@ -227,7 +201,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Global operator which returns an object in which all bits are set which are set in the first as well as the second argument. This operator exists since if it did not then the result of the bit-and <code>operator &amp;</code> would be an integer which would in turn trigger a compiler warning when we tried to assign it to an object of type NormFlags. </p>
 
-<p>Definition at line <a class="el" href="error__handler_8h_source.html#l00229">229</a> of file <a class="el" href="error__handler_8h_source.html">error_handler.h</a>.</p>
+<p>Definition at line <a class="el" href="error__handler_8h_source.html#l00244">244</a> of file <a class="el" href="error__handler_8h_source.html">error_handler.h</a>.</p>
 
 </div>
 </div>
@@ -264,7 +238,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Global operator which clears all the bits in the first argument if they are not also set in the second argument. </p>
 
-<p>Definition at line <a class="el" href="error__handler_8h_source.html#l00243">243</a> of file <a class="el" href="error__handler_8h_source.html">error_handler.h</a>.</p>
+<p>Definition at line <a class="el" href="error__handler_8h_source.html#l00258">258</a> of file <a class="el" href="error__handler_8h_source.html">error_handler.h</a>.</p>
 
 </div>
 </div>
@@ -301,7 +275,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Global operator which returns an object in which all bits are set which are either set in the first or the second argument. This operator exists since if it did not then the result of the bit-or <code>operator |</code> would be an integer which would in turn trigger a compiler warning when we tried to assign it to an object of type NormFlags. </p>
 
-<p>Definition at line <a class="el" href="error__handler_8h_source.html#l00199">199</a> of file <a class="el" href="error__handler_8h_source.html">error_handler.h</a>.</p>
+<p>Definition at line <a class="el" href="error__handler_8h_source.html#l00214">214</a> of file <a class="el" href="error__handler_8h_source.html">error_handler.h</a>.</p>
 
 </div>
 </div>
@@ -338,7 +312,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Global operator which sets the bits from the second argument also in the first one. </p>
 
-<p>Definition at line <a class="el" href="error__handler_8h_source.html#l00212">212</a> of file <a class="el" href="error__handler_8h_source.html">error_handler.h</a>.</p>
+<p>Definition at line <a class="el" href="error__handler_8h_source.html#l00227">227</a> of file <a class="el" href="error__handler_8h_source.html">error_handler.h</a>.</p>
 
 </div>
 </div>
@@ -347,8 +321,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="error__handler_8h.html">error_handler.h</a></li>
-    <li class="footer">Generated on Wed Sep 9 2015 17:25:33 for Deal.II Swiss Army Knife library by
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_5401fe99141ed2453494b7c40eaaa779.html">deal2lkit</a></li><li class="navelem"><a class="el" href="error__handler_8h.html">error_handler.h</a></li>
+    <li class="footer">Generated on Wed Nov 4 2015 16:13:13 for deal2lkit: A ToolKit library for deal.II by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

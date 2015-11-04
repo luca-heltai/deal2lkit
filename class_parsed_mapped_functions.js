@@ -1,11 +1,12 @@
 var class_parsed_mapped_functions =
 [
-    [ "ParsedMappedFunctions", "class_parsed_mapped_functions.html#a0862f2207f5c86282397d4cfe930dff2", null ],
+    [ "ParsedMappedFunctions", "class_parsed_mapped_functions.html#a871a4f7be43595503ada191d6c26dce4", null ],
     [ "acts_on_id", "class_parsed_mapped_functions.html#aee5c192cc06f99de2090a1ebe3ad3c68", null ],
     [ "add_normal_components", "class_parsed_mapped_functions.html#a41d92f9a642349cf454d15ee9dbe5d77", null ],
     [ "declare_parameters", "class_parsed_mapped_functions.html#a747b21de730cd8ca12266411b24a650e", null ],
     [ "DeclException1", "class_parsed_mapped_functions.html#ae4ee631f382adfcfbaa14f4787c2c138", null ],
     [ "DeclException1", "class_parsed_mapped_functions.html#a21a5e9dbe77dd868307ba25e189ad52b", null ],
+    [ "DeclException2", "class_parsed_mapped_functions.html#ad33320def7d20fbe98b5c22afad9a3a9", null ],
     [ "DeclException3", "class_parsed_mapped_functions.html#a3752f233bf6b7988b5cf51a0e8a15519", null ],
     [ "DeclException3", "class_parsed_mapped_functions.html#a2990bf8fb2c8c20b77c9559420ef0755", null ],
     [ "get_mapped_function", "class_parsed_mapped_functions.html#a7929a3d6fc68cd382370dd23c0fd911c", null ],

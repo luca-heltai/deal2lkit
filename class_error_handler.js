@@ -1,6 +1,7 @@
 var class_error_handler =
 [
-    [ "ErrorHandler", "class_error_handler.html#aa16bb93ca1775f2231c287b5ea5e55b5", null ],
+    [ "ErrorHandler", "class_error_handler.html#ae91eb928f28f8f0ef5814e5f63b6d220", null ],
+    [ "custom_error", "class_error_handler.html#a8cebeaf932d4e6c5fb8d755dfd2526c4", null ],
     [ "declare_parameters", "class_error_handler.html#a1b82f2b733264bd0f6dbc0b58fdc7a92", null ],
     [ "difference", "class_error_handler.html#ac055b93a612054be319c2c1e352bec04", null ],
     [ "difference", "class_error_handler.html#a688a665a37a38fe75e5edec1f39429a0", null ],

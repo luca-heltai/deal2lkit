@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Deal.II Swiss Army Knife library: Class Members</title>
+<title>deal2lkit: A ToolKit library for deal.II: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -37,7 +37,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Deal.II Swiss Army Knife library
+   <div id="projectname">deal2lkit: A ToolKit library for deal.II
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -116,12 +116,6 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>acts_on_id()
 : <a class="el" href="class_parsed_mapped_functions.html#aee5c192cc06f99de2090a1ebe3ad3c68">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
 </li>
-<li>adaptive_refinement
-: <a class="el" href="class_conv_tables_1_1_helmholtz_problem.html#ae2ae9cf75c9fd789ad9f2a579f30fffba58c642d33aab5c1b54889fccb957c9d0">ConvTables::HelmholtzProblem&lt; dim &gt;</a>
-</li>
-<li>add_copy()
-: <a class="el" href="class_s_a_k_data.html#ac5a0a6232220d6a86b8c2b01e7c04835">SAKData</a>
-</li>
 <li>add_data_vector()
 : <a class="el" href="class_parsed_data_out.html#ac58bd23775c33872247e768f5b11cf12">ParsedDataOut&lt; dim, spacedim &gt;</a>
 </li>
@@ -130,9 +124,6 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>add_parameter()
 : <a class="el" href="class_parameter_acceptor.html#ad823f9aff71602773356405bc4566e55">ParameterAcceptor</a>
-</li>
-<li>add_ref()
-: <a class="el" href="class_s_a_k_data.html#a084e33e658c6abf00a089a415ea3600c">SAKData</a>
 </li>
 </ul>
 
@@ -151,14 +142,20 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>compute_nonzero_normal_flux_constraints()
 : <a class="el" href="class_parsed_dirichlet_b_cs.html#a8e4dfa1694fbc7cc4503d4fd13d0c469">ParsedDirichletBCs&lt; dim, spacedim, n_components &gt;</a>
 </li>
+<li>control
+: <a class="el" href="class_parsed_solver.html#a3cc29f45c7bfd339c32956fb6aa8459b">ParsedSolver&lt; VECTOR &gt;</a>
+</li>
 <li>create()
 : <a class="el" href="class_parsed_grid_generator.html#a259f1ed4c34a384666d8b003260e3b44">ParsedGridGenerator&lt; dim, spacedim &gt;</a>
 </li>
 <li>create_default_value()
-: <a class="el" href="class_parsed_grid_generator.html#a1441667d405852777d6056a877528e75">ParsedGridGenerator&lt; dim, spacedim &gt;</a>
+: <a class="el" href="class_parsed_grid_generator.html#a6dd08c3aeab2b4f3ad859d1c0d47c139">ParsedGridGenerator&lt; dim, spacedim &gt;</a>
 </li>
-<li>create_mesh()
-: <a class="el" href="class_domain.html#ac90448ed4d8260fa27677716a15a28d3">Domain&lt; dim, spacedim &gt;</a>
+<li>create_new_vector()
+: <a class="el" href="class_sundials_interface.html#a420c541c45238e2d0f9b76812f13bbd6">SundialsInterface&lt; VEC &gt;</a>
+</li>
+<li>custom_error()
+: <a class="el" href="class_error_handler.html#a8cebeaf932d4e6c5fb8d755dfd2526c4">ErrorHandler&lt; ntables &gt;</a>
 </li>
 </ul>
 
@@ -168,23 +165,23 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="class_parameter_acceptor.html#a3775ed960cf63c9ae88613925d226b11">ParameterAcceptor</a>
 </li>
 <li>declare_parameters()
-: <a class="el" href="class_domain.html#a63e07552c582d9a67ed9fbf99e1a11f3">Domain&lt; dim, spacedim &gt;</a>
-, <a class="el" href="class_error_handler.html#a1b82f2b733264bd0f6dbc0b58fdc7a92">ErrorHandler&lt; ntables &gt;</a>
+: <a class="el" href="class_error_handler.html#a1b82f2b733264bd0f6dbc0b58fdc7a92">ErrorHandler&lt; ntables &gt;</a>
+, <a class="el" href="class_i_d_a_interface.html#a535c35503f0e6a24dbbc5cca9978c2ec">IDAInterface&lt; VEC &gt;</a>
 , <a class="el" href="class_parameter_acceptor.html#ace1609b41eeb6a5461a388061d23b1bd">ParameterAcceptor</a>
 , <a class="el" href="class_parsed_data_out.html#aac8af955de45324d4d5cd8108e979499">ParsedDataOut&lt; dim, spacedim &gt;</a>
 , <a class="el" href="class_parsed_dirichlet_b_cs.html#a59a00c9bd1ff5a50f5fc39ee80fa4bc1">ParsedDirichletBCs&lt; dim, spacedim, n_components &gt;</a>
 , <a class="el" href="class_parsed_finite_element.html#a740906fdf9fbda0f0fc421c73b9d522b">ParsedFiniteElement&lt; dim, spacedim &gt;</a>
 , <a class="el" href="class_parsed_function.html#a036684efc1b4e405448f83ad82a9a685">ParsedFunction&lt; dim, ncomponents &gt;</a>
 , <a class="el" href="class_parsed_grid_generator.html#a2b3d8d1567cfb1735053d6129fe7a640">ParsedGridGenerator&lt; dim, spacedim &gt;</a>
+, <a class="el" href="class_parsed_grid_refinement.html#aa4e9fc4c369631339bae9e856a4606bc">ParsedGridRefinement</a>
 , <a class="el" href="class_parsed_mapped_functions.html#a747b21de730cd8ca12266411b24a650e">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
-, <a class="el" href="class_serial_laplace.html#acfbb66c57d05b4450bd5628e291eddf1">SerialLaplace&lt; dim &gt;</a>
+, <a class="el" href="class_parsed_solver.html#a6b5c9855ddf192408701d4005c668c65">ParsedSolver&lt; VECTOR &gt;</a>
 </li>
 <li>DeclException1()
 : <a class="el" href="class_parsed_mapped_functions.html#ae4ee631f382adfcfbaa14f4787c2c138">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
-, <a class="el" href="class_s_a_k_data.html#a961e0c423fc613d7dc2d94a33d4056b4">SAKData</a>
 </li>
 <li>DeclException2()
-: <a class="el" href="class_s_a_k_data.html#a5fee6b30044c48561e12d642ae0cb771">SAKData</a>
+: <a class="el" href="class_parsed_mapped_functions.html#ad33320def7d20fbe98b5c22afad9a3a9">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
 </li>
 <li>DeclException3()
 : <a class="el" href="class_parsed_mapped_functions.html#a3752f233bf6b7988b5cf51a0e8a15519">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
@@ -192,8 +189,11 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>difference()
 : <a class="el" href="class_error_handler.html#ac055b93a612054be319c2c1e352bec04">ErrorHandler&lt; ntables &gt;</a>
 </li>
-<li>Domain()
-: <a class="el" href="class_domain.html#a957a217d14516022c3c7d45307082f2a">Domain&lt; dim, spacedim &gt;</a>
+<li>differential_components()
+: <a class="el" href="class_sundials_interface.html#a6094ddd618793ad4ca392275782f54e1">SundialsInterface&lt; VEC &gt;</a>
+</li>
+<li>distributed()
+: <a class="el" href="class_parsed_grid_generator.html#aeb2539bb975f6a9464064311fdf87130">ParsedGridGenerator&lt; dim, spacedim &gt;</a>
 </li>
 </ul>
 
@@ -206,7 +206,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="class_error_handler.html#a9de94e6c74241e407653efc26a97d2a0">ErrorHandler&lt; ntables &gt;</a>
 </li>
 <li>ErrorHandler()
-: <a class="el" href="class_error_handler.html#aa16bb93ca1775f2231c287b5ea5e55b5">ErrorHandler&lt; ntables &gt;</a>
+: <a class="el" href="class_error_handler.html#ae91eb928f28f8f0ef5814e5f63b6d220">ErrorHandler&lt; ntables &gt;</a>
 </li>
 </ul>
 
@@ -215,15 +215,18 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>FEValuesCache()
 : <a class="el" href="class_f_e_values_cache.html#acedce02eced5b09b932d58e444604e1e">FEValuesCache&lt; dim, spacedim &gt;</a>
 </li>
+<li>final_time
+: <a class="el" href="class_i_d_a_interface.html#a8fb867b9c2e428f04b5765fd70ad542d">IDAInterface&lt; VEC &gt;</a>
+</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
-<li>get()
-: <a class="el" href="class_s_a_k_data.html#a4bb26c0e3bde79c22fb19c08f0c3b56a">SAKData</a>
-</li>
 <li>get_block_names()
 : <a class="el" href="class_parsed_finite_element.html#a8822683db10141cdf164837973764dc1">ParsedFiniteElement&lt; dim, spacedim &gt;</a>
+</li>
+<li>get_comm()
+: <a class="el" href="class_sundials_interface.html#ac1eb88896f1a145e9aec388a20af72aa">SundialsInterface&lt; VEC &gt;</a>
 </li>
 <li>get_component_blocks()
 : <a class="el" href="class_parsed_finite_element.html#a61bfbf3e99aaa8858c0cf8b0baa77dec">ParsedFiniteElement&lt; dim, spacedim &gt;</a>
@@ -257,6 +260,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>get_JxW_values()
 : <a class="el" href="class_f_e_values_cache.html#ace5739600eb98b1dec54c12d6e9d504e">FEValuesCache&lt; dim, spacedim &gt;</a>
+</li>
+<li>get_local_tolerances()
+: <a class="el" href="class_sundials_interface.html#a76f100a930e58360da10bcd50ed2fa5e">SundialsInterface&lt; VEC &gt;</a>
 </li>
 <li>get_mapped_function()
 : <a class="el" href="class_parsed_mapped_functions.html#a7929a3d6fc68cd382370dd23c0fd911c">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
@@ -300,27 +306,15 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>get_symmetric_gradients()
 : <a class="el" href="class_f_e_values_cache.html#aba81d78c3b538ea977702c783353742e">FEValuesCache&lt; dim, spacedim &gt;</a>
 </li>
-<li>get_tria()
-: <a class="el" href="class_domain.html#a2f15d46e56dc3cd5f5520db6f3b7265a">Domain&lt; dim, spacedim &gt;</a>
-</li>
 <li>get_values()
-: <a class="el" href="class_f_e_values_cache.html#af28ab55dfe7af7786b514013f4d9ccfa">FEValuesCache&lt; dim, spacedim &gt;</a>
-</li>
-<li>global_refinement
-: <a class="el" href="class_conv_tables_1_1_helmholtz_problem.html#ae2ae9cf75c9fd789ad9f2a579f30fffbaf52ee86734c393557771e6759dcff053">ConvTables::HelmholtzProblem&lt; dim &gt;</a>
-</li>
-<li>gradient()
-: <a class="el" href="class_conv_tables_1_1_solution.html#aaaa6f57f9ffbed35a85f4a1582bf4916">ConvTables::Solution&lt; dim &gt;</a>
+: <a class="el" href="class_f_e_values_cache.html#af83364b96564c603f7a198206706bbdf">FEValuesCache&lt; dim, spacedim &gt;</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
-<li>have()
-: <a class="el" href="class_s_a_k_data.html#a3c6d71804f07238a6e07e7f306402f1f">SAKData</a>
-</li>
-<li>HelmholtzProblem()
-: <a class="el" href="class_conv_tables_1_1_helmholtz_problem.html#ae47eac4560ba1fbf380f9dc7c55684e0">ConvTables::HelmholtzProblem&lt; dim &gt;</a>
+<li>handle()
+: <a class="el" href="struct_d2_k___n_a_m_e_s_p_a_c_e___o_p_e_n_1_1handle.html#a44a4826ad1cdd3d1c0101f5d00c771e1">D2K_NAMESPACE_OPEN::handle</a>
 </li>
 </ul>
 
@@ -335,14 +329,20 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>id_str_functions
 : <a class="el" href="class_parsed_mapped_functions.html#a29878886630b189eaffa46081e843bd7">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
 </li>
+<li>IDAInterface()
+: <a class="el" href="class_i_d_a_interface.html#adb332efb07d39318bbddf22f64fee640">IDAInterface&lt; VEC &gt;</a>
+</li>
 <li>ids
 : <a class="el" href="class_parsed_mapped_functions.html#a5a772127895c774b514014edca251a80">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
+</li>
+<li>initial_time
+: <a class="el" href="class_i_d_a_interface.html#a4bca92a42df13e836c6f41247b69d8d6">IDAInterface&lt; VEC &gt;</a>
 </li>
 <li>initialize()
 : <a class="el" href="class_parameter_acceptor.html#af04c215672e63f03a942ae4c55b57c27">ParameterAcceptor</a>
 </li>
 <li>interpolate_boundary_values()
-: <a class="el" href="class_parsed_dirichlet_b_cs.html#a4f5ebcd9d42c4c16c83667d54a3ead21">ParsedDirichletBCs&lt; dim, spacedim, n_components &gt;</a>
+: <a class="el" href="class_parsed_dirichlet_b_cs.html#aa55adae3d8c1d9dca53a3541c31a5a6e">ParsedDirichletBCs&lt; dim, spacedim, n_components &gt;</a>
 </li>
 </ul>
 
@@ -361,6 +361,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>mapped_normal_components
 : <a class="el" href="class_parsed_mapped_functions.html#a83fa03bfc2192514cdac2da268d072ae">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
 </li>
+<li>mark_cells()
+: <a class="el" href="class_parsed_grid_refinement.html#aeff9dd07e131b6d3cf64b7cd59ab8e2b">ParsedGridRefinement</a>
+</li>
 </ul>
 
 
@@ -371,8 +374,8 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>n_components()
 : <a class="el" href="class_parsed_finite_element.html#a432814fb23a7db937442afdd70e400d1">ParsedFiniteElement&lt; dim, spacedim &gt;</a>
 </li>
-<li>n_source_centers
-: <a class="el" href="class_conv_tables_1_1_solution_base.html#ac5640718a3ef0f47df01a5cb23472f1c">ConvTables::SolutionBase&lt; dim &gt;</a>
+<li>n_dofs()
+: <a class="el" href="class_sundials_interface.html#a3f38522458306400423e56e4c25e2356">SundialsInterface&lt; VEC &gt;</a>
 </li>
 <li>name
 : <a class="el" href="class_parsed_mapped_functions.html#ac24e04e4879d3358fbb32469ad2b73b2">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
@@ -387,17 +390,20 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>op
+: <a class="el" href="class_parsed_solver.html#a618e9ce2fb900b2165ace7e2403a8e65">ParsedSolver&lt; VECTOR &gt;</a>
+</li>
 <li>operator()()
 : <a class="el" href="class_parsed_finite_element.html#a3056215d90ae2284d22e2abce20d22d7">ParsedFiniteElement&lt; dim, spacedim &gt;</a>
 </li>
 <li>operator&lt;&lt;()
-: <a class="el" href="class_over_write_stream.html#abfd899df24964d7412593b99534d557c">OverWriteStream&lt; Stream &gt;</a>
+: <a class="el" href="class_over_write_stream.html#aa3d1aaf1d3a2859b346384f09922d708">OverWriteStream&lt; Stream &gt;</a>
 </li>
 <li>operator[]()
 : <a class="el" href="class_time_utilities.html#aadb98d1aa3ebbba8d48a8048c7db84b7">TimeUtilities</a>
 </li>
-<li>output_mesh()
-: <a class="el" href="class_domain.html#a8bc191521290386397e0096f27653cc8">Domain&lt; dim, spacedim &gt;</a>
+<li>output_step()
+: <a class="el" href="class_sundials_interface.html#ab9b4c2a0cca443a9d06c48fb76c0b13c">SundialsInterface&lt; VEC &gt;</a>
 </li>
 <li>output_table()
 : <a class="el" href="class_error_handler.html#a55ad14f7cbf37250984cdb8c2c58b627">ErrorHandler&lt; ntables &gt;</a>
@@ -409,6 +415,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>p
+: <a class="el" href="struct_d2_k___n_a_m_e_s_p_a_c_e___o_p_e_n_1_1handle.html#a798f1684ab03275c23e317442fced5b5">D2K_NAMESPACE_OPEN::handle</a>
+</li>
 <li>ParameterAcceptor()
 : <a class="el" href="class_parameter_acceptor.html#a1a5052568d2c3e748e068b6c3d822893">ParameterAcceptor</a>
 </li>
@@ -416,11 +425,11 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="class_parameter_acceptor.html#ac4b7044a9e1d53c401a50565d8996022">ParameterAcceptor</a>
 </li>
 <li>parse_parameters()
-: <a class="el" href="class_domain.html#ad851618ee884b0694181d92da6ff81a5">Domain&lt; dim, spacedim &gt;</a>
-, <a class="el" href="class_error_handler.html#a464f1ba3a697df8ffcb35b0edfe1fbd3">ErrorHandler&lt; ntables &gt;</a>
+: <a class="el" href="class_error_handler.html#a464f1ba3a697df8ffcb35b0edfe1fbd3">ErrorHandler&lt; ntables &gt;</a>
 , <a class="el" href="class_parameter_acceptor.html#ab3ee6cabf1ff10be362ac65495183c52">ParameterAcceptor</a>
 , <a class="el" href="class_parsed_data_out.html#a929b8f76b6a410033f1d4423124ddd6a">ParsedDataOut&lt; dim, spacedim &gt;</a>
 , <a class="el" href="class_parsed_function.html#a2faeb0a75157659cce56275ef3270b0e">ParsedFunction&lt; dim, ncomponents &gt;</a>
+, <a class="el" href="class_parsed_solver.html#af5bc56c9952a93f25813f7355397fe9d">ParsedSolver&lt; VECTOR &gt;</a>
 </li>
 <li>parse_parameters_call_back()
 : <a class="el" href="class_parameter_acceptor.html#a5d6b8666b6b9b9898b0f584b1a602ea5">ParameterAcceptor</a>
@@ -428,55 +437,59 @@ $(document).ready(function(){initNavTree('functions.html','');});
 , <a class="el" href="class_parsed_dirichlet_b_cs.html#a7247dc996f555e8c2b320d70a6cab62d">ParsedDirichletBCs&lt; dim, spacedim, n_components &gt;</a>
 , <a class="el" href="class_parsed_finite_element.html#afd4536430fdc389f60d7d7ebb09fafb3">ParsedFiniteElement&lt; dim, spacedim &gt;</a>
 , <a class="el" href="class_parsed_mapped_functions.html#a328c5ab6be8c8f398a753a4fa6d76422">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
+, <a class="el" href="class_parsed_solver.html#a8a11047efa43f3f171c14b3b127f225a">ParsedSolver&lt; VECTOR &gt;</a>
 </li>
 <li>ParsedDataOut()
-: <a class="el" href="class_parsed_data_out.html#ab1c83bbc8140548124efefaad246e0c8">ParsedDataOut&lt; dim, spacedim &gt;</a>
+: <a class="el" href="class_parsed_data_out.html#ad73becd685b0a9af466ba1cb9393f49b">ParsedDataOut&lt; dim, spacedim &gt;</a>
 </li>
 <li>ParsedDirichletBCs()
 : <a class="el" href="class_parsed_dirichlet_b_cs.html#a83c86bbcd6fc9807564ac6bb1921e723">ParsedDirichletBCs&lt; dim, spacedim, n_components &gt;</a>
 </li>
 <li>ParsedFiniteElement()
-: <a class="el" href="class_parsed_finite_element.html#a0b32290d760794d368a4a815ec603ae6">ParsedFiniteElement&lt; dim, spacedim &gt;</a>
+: <a class="el" href="class_parsed_finite_element.html#a83995c191ad5965e639068d34d429850">ParsedFiniteElement&lt; dim, spacedim &gt;</a>
 </li>
 <li>ParsedFunction()
 : <a class="el" href="class_parsed_function.html#af9529969ac314e7233a5091671c0e81a">ParsedFunction&lt; dim, ncomponents &gt;</a>
 </li>
 <li>ParsedGridGenerator()
-: <a class="el" href="class_parsed_grid_generator.html#ae3e3f9acbf5671bc42c50a56c4ea539e">ParsedGridGenerator&lt; dim, spacedim &gt;</a>
+: <a class="el" href="class_parsed_grid_generator.html#a901180a7456bb7c2009dfdddb701dceb">ParsedGridGenerator&lt; dim, spacedim &gt;</a>
+</li>
+<li>ParsedGridRefinement()
+: <a class="el" href="class_parsed_grid_refinement.html#abd4ca397cfe27e3ed75412173e1a0ca7">ParsedGridRefinement</a>
 </li>
 <li>ParsedMappedFunctions()
-: <a class="el" href="class_parsed_mapped_functions.html#a0862f2207f5c86282397d4cfe930dff2">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
+: <a class="el" href="class_parsed_mapped_functions.html#a871a4f7be43595503ada191d6c26dce4">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
+</li>
+<li>ParsedSolver()
+: <a class="el" href="class_parsed_solver.html#aa540f1ba45b032c0f728ba47db506740">ParsedSolver&lt; VECTOR &gt;</a>
+</li>
+<li>prec
+: <a class="el" href="class_parsed_solver.html#acb8fff21bc081a175bdb5063e5ba0a91">ParsedSolver&lt; VECTOR &gt;</a>
 </li>
 <li>prepare_data_output()
 : <a class="el" href="class_parsed_data_out.html#adb9eba598c1c2a4b46a2cd1a72030a65">ParsedDataOut&lt; dim, spacedim &gt;</a>
 </li>
 <li>print_info()
 : <a class="el" href="class_f_e_values_cache.html#afd35c8ebeb61188e63a24e7064efba62">FEValuesCache&lt; dim, spacedim &gt;</a>
-, <a class="el" href="class_s_a_k_data.html#a9e1af585707ad7122a9c47d7dd2d7f22">SAKData</a>
 </li>
 <li>prm
 : <a class="el" href="class_parameter_acceptor.html#a96081d4cc985b722c9841fcf0c0e54ec">ParameterAcceptor</a>
 </li>
 <li>project_boundary_values()
-: <a class="el" href="class_parsed_dirichlet_b_cs.html#a403421884a0d8ac56862f5a3796ee921">ParsedDirichletBCs&lt; dim, spacedim, n_components &gt;</a>
+: <a class="el" href="class_parsed_dirichlet_b_cs.html#af6c5ef43aaf809c7d9dfebccee2c0023">ParsedDirichletBCs&lt; dim, spacedim, n_components &gt;</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
-<li>RefinementMode
-: <a class="el" href="class_conv_tables_1_1_helmholtz_problem.html#ae2ae9cf75c9fd789ad9f2a579f30fffb">ConvTables::HelmholtzProblem&lt; dim &gt;</a>
-</li>
 <li>reinit()
-: <a class="el" href="class_domain.html#a0f8022be30c8a33ab36654cc03217bfd">Domain&lt; dim, spacedim &gt;</a>
-, <a class="el" href="class_f_e_values_cache.html#aaf663f2038c3bb71908ab24a9374d2a1">FEValuesCache&lt; dim, spacedim &gt;</a>
+: <a class="el" href="class_f_e_values_cache.html#aaf663f2038c3bb71908ab24a9374d2a1">FEValuesCache&lt; dim, spacedim &gt;</a>
 </li>
-<li>RightHandSide()
-: <a class="el" href="class_conv_tables_1_1_right_hand_side.html#a46b45436c23b1cfdee409b9e1e7d53a5">ConvTables::RightHandSide&lt; dim &gt;</a>
+<li>reset_ode()
+: <a class="el" href="class_i_d_a_interface.html#ad6f3d4f988bbc24cef29ac1de310dc7a">IDAInterface&lt; VEC &gt;</a>
 </li>
-<li>run()
-: <a class="el" href="class_conv_tables_1_1_helmholtz_problem.html#ae1b88dabb1f03791ba22d362b8a9b567">ConvTables::HelmholtzProblem&lt; dim &gt;</a>
-, <a class="el" href="class_serial_laplace.html#a484bedeb0f4a0331f19f7155ebba2fa7">SerialLaplace&lt; dim &gt;</a>
+<li>residual()
+: <a class="el" href="class_sundials_interface.html#a0226a2d16dce1af1d6590f45a0dfa08f">SundialsInterface&lt; VEC &gt;</a>
 </li>
 </ul>
 
@@ -488,29 +501,32 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>serial()
 : <a class="el" href="class_parsed_grid_generator.html#a55dea3a69b881ffee354890b771587d9">ParsedGridGenerator&lt; dim, spacedim &gt;</a>
 </li>
-<li>SerialLaplace()
-: <a class="el" href="class_serial_laplace.html#ae94d136174cb678bc60ff23f93218e0b">SerialLaplace&lt; dim &gt;</a>
-</li>
 <li>set_normal_functions()
 : <a class="el" href="class_parsed_mapped_functions.html#a6c75697baf51b0c642c259ce8b2b089e">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
 </li>
 <li>set_time()
 : <a class="el" href="class_parsed_mapped_functions.html#a4eb50b668a99c13f8422c519dcf303d4">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
 </li>
+<li>setup_jacobian()
+: <a class="el" href="class_sundials_interface.html#aed6926f5f779928a4491189331a017ca">SundialsInterface&lt; VEC &gt;</a>
+</li>
 <li>sleep()
 : <a class="el" href="class_time_utilities.html#a7e08186f762a77e597b8e05a43a2f36c">TimeUtilities</a>
 </li>
-<li>Solution()
-: <a class="el" href="class_conv_tables_1_1_solution.html#a5a9da859d82d5504eb591d037423e740">ConvTables::Solution&lt; dim &gt;</a>
+<li>solve_jacobian_system()
+: <a class="el" href="class_sundials_interface.html#a87f46ceee2df7877047903088b5fde9b">SundialsInterface&lt; VEC &gt;</a>
 </li>
-<li>source_centers
-: <a class="el" href="class_conv_tables_1_1_solution_base.html#aa7c4c888ad8438f1dcaec707c0b7412c">ConvTables::SolutionBase&lt; dim &gt;</a>
+<li>solver_should_restart()
+: <a class="el" href="class_sundials_interface.html#a4a0cf1213c7a02cca14ae24bc8dc74e6">SundialsInterface&lt; VEC &gt;</a>
 </li>
 <li>split_id_components()
 : <a class="el" href="class_parsed_mapped_functions.html#a4081672429df2e0c1121168c38034694">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
 </li>
 <li>split_id_functions()
 : <a class="el" href="class_parsed_mapped_functions.html#ac1a7c2cd36a997c7c1816f72e9da7793">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
+</li>
+<li>start_ode()
+: <a class="el" href="class_i_d_a_interface.html#a084cbe6776dba09669e6d561325abdea">IDAInterface&lt; VEC &gt;</a>
 </li>
 <li>str_component_names
 : <a class="el" href="class_parsed_mapped_functions.html#abaaeb6d79c0d7cd4292c5ea09f711ad4">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
@@ -524,6 +540,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>str_id_functions
 : <a class="el" href="class_parsed_mapped_functions.html#a13ab1bb101061694bffec9ea3ab856e4">ParsedMappedFunctions&lt; spacedim, n_components &gt;</a>
 </li>
+<li>SundialsInterface()
+: <a class="el" href="class_sundials_interface.html#ae1d6b914ef61390915f0bbae9f635283">SundialsInterface&lt; VEC &gt;</a>
+</li>
 </ul>
 
 
@@ -534,18 +553,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </ul>
 
 
-<h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
-<li>value()
-: <a class="el" href="class_conv_tables_1_1_right_hand_side.html#ac5c36f7bec2c13f22cdac48dab0364e9">ConvTables::RightHandSide&lt; dim &gt;</a>
-, <a class="el" href="class_conv_tables_1_1_solution.html#a1ef0045d867d8623070c27816b24fc0f">ConvTables::Solution&lt; dim &gt;</a>
-</li>
-</ul>
-
-
 <h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
-<li>width
-: <a class="el" href="class_conv_tables_1_1_solution_base.html#a6a8c1a32d653ef072f3d51563e0b9dfa">ConvTables::SolutionBase&lt; dim &gt;</a>
-</li>
 <li>write()
 : <a class="el" href="class_parsed_grid_generator.html#a26e64848201d80e416cf1a3fd99b0833">ParsedGridGenerator&lt; dim, spacedim &gt;</a>
 </li>
@@ -556,8 +564,11 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 
 <h3><a class="anchor" id="index_~"></a>- ~ -</h3><ul>
-<li>~Domain()
-: <a class="el" href="class_domain.html#ad04af4fbbea397b9b795ce995a19455b">Domain&lt; dim, spacedim &gt;</a>
+<li>~handle()
+: <a class="el" href="struct_d2_k___n_a_m_e_s_p_a_c_e___o_p_e_n_1_1handle.html#adadf9bafed40f911e447120aa690f6dc">D2K_NAMESPACE_OPEN::handle</a>
+</li>
+<li>~IDAInterface()
+: <a class="el" href="class_i_d_a_interface.html#aa152806e9098e6607a700cf355e3f9f0">IDAInterface&lt; VEC &gt;</a>
 </li>
 <li>~OverWriteStream()
 : <a class="el" href="class_over_write_stream.html#ab489706e36698dc8e662884d3742fb23">OverWriteStream&lt; Stream &gt;</a>
@@ -571,7 +582,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 9 2015 17:25:33 for Deal.II Swiss Army Knife library by
+    <li class="footer">Generated on Wed Nov 4 2015 16:13:13 for deal2lkit: A ToolKit library for deal.II by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>
