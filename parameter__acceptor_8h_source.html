@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>deal2lkit: A ToolKit library for Deal.II: include/deal2lkit/parameter_acceptor.h Source File</title>
+<title>deal2lkit: A ToolKit library for deal.II: include/deal2lkit/parameter_acceptor.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -37,7 +37,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">deal2lkit: A ToolKit library for Deal.II
+   <div id="projectname">deal2lkit: A ToolKit library for deal.II
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -124,94 +124,91 @@ $(document).ready(function(){initNavTree('parameter__acceptor_8h_source.html',''
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;boost/any.hpp&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;typeinfo&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keyword">using namespace </span><a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/namespacedealii.html">dealii</a>;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<a class="code" href="namespace_d2_k___n_a_m_e_s_p_a_c_e___o_p_e_n.html">D2K_NAMESPACE_OPEN</a></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00335"></a><span class="lineno"><a class="line" href="class_parameter_acceptor.html">  335</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_parameter_acceptor.html">ParameterAcceptor</a> : <span class="keyword">public</span> <a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classSubscriptor.html">Subscriptor</a></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;{</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  <a class="code" href="class_parameter_acceptor.html">ParameterAcceptor</a>(<span class="keyword">const</span> std::string section_name=<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="class_parameter_acceptor.html">ParameterAcceptor</a>();</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> initialize(<span class="keyword">const</span> std::string filename=<span class="stringliteral">&quot;&quot;</span>,</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                         <span class="keyword">const</span> std::string outfilename=<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> clear();</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> parse_parameters(<a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a> &amp;prm);</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> parse_parameters_call_back();</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> declare_parameters(<a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a> &amp;prm) = 0;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> parse_all_parameters(<a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a> &amp;prm=<a class="code" href="class_parameter_acceptor.html#a96081d4cc985b722c9841fcf0c0e54ec">ParameterAcceptor::prm</a>);</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> log_info();</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> declare_all_parameters(<a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a> &amp;prm=<a class="code" href="class_parameter_acceptor.html#a96081d4cc985b722c9841fcf0c0e54ec">ParameterAcceptor::prm</a>);</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  std::string get_section_name() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00430"></a><span class="lineno"><a class="line" href="class_parameter_acceptor.html#ad823f9aff71602773356405bc4566e55">  430</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_parameter_acceptor.html#ad823f9aff71602773356405bc4566e55">add_parameter</a>(<a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a> &amp;prm, T *parameter,</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                     <span class="keyword">const</span> std::string &amp;entry, <span class="keyword">const</span> std::string &amp;default_value,</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                     <span class="keyword">const</span> <a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classPatterns_1_1PatternBase.html">Patterns::PatternBase</a> &amp;pattern=<a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classPatterns_1_1Anything.html">Patterns::Anything</a>(),</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;                     <span class="keyword">const</span> std::string &amp;documentation=std::string())</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  {</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    prm.<a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html#afb951f101e0969416f7f47d24c03bcfa">declare_entry</a>(entry, default_value, pattern, documentation);</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    parameters[entry] = boost::any(parameter);</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  }</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
-<div class="line"><a name="l00442"></a><span class="lineno"><a class="line" href="class_parameter_acceptor.html#a96081d4cc985b722c9841fcf0c0e54ec">  442</a></span>&#160;  <span class="keyword">static</span> <a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a> <a class="code" href="class_parameter_acceptor.html#a96081d4cc985b722c9841fcf0c0e54ec">prm</a>;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00449"></a><span class="lineno"><a class="line" href="class_parameter_acceptor.html#ad3bc4a3c5496637eaf4fa1f075ec4f74">  449</a></span>&#160;  <span class="keyword">static</span> std::vector&lt;SmartPointer&lt;ParameterAcceptor&gt; &gt; <a class="code" href="class_parameter_acceptor.html#ad3bc4a3c5496637eaf4fa1f075ec4f74">class_list</a>;</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
-<div class="line"><a name="l00452"></a><span class="lineno"><a class="line" href="class_parameter_acceptor.html#a5175ae473c3b15d70dcf74e40b6dc2c0">  452</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_parameter_acceptor.html#a5175ae473c3b15d70dcf74e40b6dc2c0">acceptor_id</a>;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;</div>
-<div class="line"><a name="l00458"></a><span class="lineno"><a class="line" href="class_parameter_acceptor.html#a232f65d19a056057bfd37c111a903ef1">  458</a></span>&#160;  std::map&lt;std::string, boost::any&gt; <a class="code" href="class_parameter_acceptor.html#a232f65d19a056057bfd37c111a903ef1">parameters</a>;</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00462"></a><span class="lineno"><a class="line" href="class_parameter_acceptor.html#a52134c59ec98830230c23e080c841705">  462</a></span>&#160;  <span class="keyword">const</span> std::string <a class="code" href="class_parameter_acceptor.html#a52134c59ec98830230c23e080c841705">section_name</a>;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;};</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;D2K_NAMESPACE_CLOSE</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;</div>
-<div class="ttc" id="class_parameter_acceptor_html"><div class="ttname"><a href="class_parameter_acceptor.html">ParameterAcceptor</a></div><div class="ttdef"><b>Definition:</b> <a href="parameter__acceptor_8h_source.html#l00335">parameter_acceptor.h:335</a></div></div>
-<div class="ttc" id="class_parameter_acceptor_html_ad3bc4a3c5496637eaf4fa1f075ec4f74"><div class="ttname"><a href="class_parameter_acceptor.html#ad3bc4a3c5496637eaf4fa1f075ec4f74">ParameterAcceptor::class_list</a></div><div class="ttdeci">static std::vector&lt; SmartPointer&lt; ParameterAcceptor &gt; &gt; class_list</div><div class="ttdef"><b>Definition:</b> <a href="parameter__acceptor_8h_source.html#l00449">parameter_acceptor.h:449</a></div></div>
-<div class="ttc" id="class_parameter_acceptor_html_a96081d4cc985b722c9841fcf0c0e54ec"><div class="ttname"><a href="class_parameter_acceptor.html#a96081d4cc985b722c9841fcf0c0e54ec">ParameterAcceptor::prm</a></div><div class="ttdeci">static ParameterHandler prm</div><div class="ttdef"><b>Definition:</b> <a href="parameter__acceptor_8h_source.html#l00442">parameter_acceptor.h:442</a></div></div>
-<div class="ttc" id="namespace_d2_k___n_a_m_e_s_p_a_c_e___o_p_e_n_html"><div class="ttname"><a href="namespace_d2_k___n_a_m_e_s_p_a_c_e___o_p_e_n.html">D2K_NAMESPACE_OPEN</a></div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cc_source.html#l00027">utilities.cc:27</a></div></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">using namespace </span><a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/namespacedealii.html">dealii</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;D2K_NAMESPACE_OPEN</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_parameter_acceptor.html">   72</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_parameter_acceptor.html">ParameterAcceptor</a> : <span class="keyword">public</span> <a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classSubscriptor.html">Subscriptor</a></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="class_parameter_acceptor.html">ParameterAcceptor</a>(<span class="keyword">const</span> std::string section_name=<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="class_parameter_acceptor.html">ParameterAcceptor</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> initialize(<span class="keyword">const</span> std::string filename=<span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                         <span class="keyword">const</span> std::string outfilename=<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> clear();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> parse_parameters(<a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a> &amp;prm);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> parse_parameters_call_back();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> declare_parameters(<a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a> &amp;prm) = 0;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> parse_all_parameters(<a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a> &amp;prm=<a class="code" href="class_parameter_acceptor.html#a96081d4cc985b722c9841fcf0c0e54ec">ParameterAcceptor::prm</a>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> log_info();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> declare_all_parameters(<a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a> &amp;prm=<a class="code" href="class_parameter_acceptor.html#a96081d4cc985b722c9841fcf0c0e54ec">ParameterAcceptor::prm</a>);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  std::string get_section_name() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="class_parameter_acceptor.html#ad823f9aff71602773356405bc4566e55">  167</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_parameter_acceptor.html#ad823f9aff71602773356405bc4566e55">add_parameter</a>(<a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a> &amp;prm, T *parameter,</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                     <span class="keyword">const</span> std::string &amp;entry, <span class="keyword">const</span> std::string &amp;default_value,</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                     <span class="keyword">const</span> <a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classPatterns_1_1PatternBase.html">Patterns::PatternBase</a> &amp;pattern=<a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classPatterns_1_1Anything.html">Patterns::Anything</a>(),</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                     <span class="keyword">const</span> std::string &amp;documentation=std::string())</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    prm.<a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html#afb951f101e0969416f7f47d24c03bcfa">declare_entry</a>(entry, default_value, pattern, documentation);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    parameters[entry] = boost::any(parameter);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="class_parameter_acceptor.html#a96081d4cc985b722c9841fcf0c0e54ec">  179</a></span>&#160;  <span class="keyword">static</span> <a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a> <a class="code" href="class_parameter_acceptor.html#a96081d4cc985b722c9841fcf0c0e54ec">prm</a>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keyword">static</span> std::vector&lt;SmartPointer&lt;ParameterAcceptor&gt; &gt; class_list;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> acceptor_id;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  std::map&lt;std::string, boost::any&gt; parameters;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="class_parameter_acceptor.html#a52134c59ec98830230c23e080c841705">  199</a></span>&#160;  <span class="keyword">const</span> std::string <a class="code" href="class_parameter_acceptor.html#a52134c59ec98830230c23e080c841705">section_name</a>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;};</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;D2K_NAMESPACE_CLOSE</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="ttc" id="class_parameter_acceptor_html"><div class="ttname"><a href="class_parameter_acceptor.html">ParameterAcceptor</a></div><div class="ttdef"><b>Definition:</b> <a href="parameter__acceptor_8h_source.html#l00072">parameter_acceptor.h:72</a></div></div>
+<div class="ttc" id="class_parameter_acceptor_html_a96081d4cc985b722c9841fcf0c0e54ec"><div class="ttname"><a href="class_parameter_acceptor.html#a96081d4cc985b722c9841fcf0c0e54ec">ParameterAcceptor::prm</a></div><div class="ttdeci">static ParameterHandler prm</div><div class="ttdef"><b>Definition:</b> <a href="parameter__acceptor_8h_source.html#l00179">parameter_acceptor.h:179</a></div></div>
 <div class="ttc" id="classParameterHandler_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a></div></div>
 <div class="ttc" id="smartpointer_8h_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/smartpointer_8h.html">smartpointer.h</a></div></div>
 <div class="ttc" id="logstream_8h_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/logstream_8h.html">logstream.h</a></div></div>
-<div class="ttc" id="class_parameter_acceptor_html_a52134c59ec98830230c23e080c841705"><div class="ttname"><a href="class_parameter_acceptor.html#a52134c59ec98830230c23e080c841705">ParameterAcceptor::section_name</a></div><div class="ttdeci">const std::string section_name</div><div class="ttdef"><b>Definition:</b> <a href="parameter__acceptor_8h_source.html#l00462">parameter_acceptor.h:462</a></div></div>
+<div class="ttc" id="class_parameter_acceptor_html_a52134c59ec98830230c23e080c841705"><div class="ttname"><a href="class_parameter_acceptor.html#a52134c59ec98830230c23e080c841705">ParameterAcceptor::section_name</a></div><div class="ttdeci">const std::string section_name</div><div class="ttdef"><b>Definition:</b> <a href="parameter__acceptor_8h_source.html#l00199">parameter_acceptor.h:199</a></div></div>
 <div class="ttc" id="parameter__handler_8h_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/parameter__handler_8h.html">parameter_handler.h</a></div></div>
 <div class="ttc" id="include_2deal_8II_2base_2exceptions_8h_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/include_2deal_8II_2base_2exceptions_8h.html">exceptions.h</a></div></div>
 <div class="ttc" id="classPatterns_1_1Anything_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classPatterns_1_1Anything.html">Patterns::Anything</a></div></div>
 <div class="ttc" id="classParameterHandler_html_afb951f101e0969416f7f47d24c03bcfa"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html#afb951f101e0969416f7f47d24c03bcfa">ParameterHandler::declare_entry</a></div><div class="ttdeci">void declare_entry(const std::string &amp;entry, const std::string &amp;default_value, const Patterns::PatternBase &amp;pattern=Patterns::Anything(), const std::string &amp;documentation=std::string())</div></div>
 <div class="ttc" id="classSubscriptor_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classSubscriptor.html">Subscriptor</a></div></div>
-<div class="ttc" id="class_parameter_acceptor_html_a232f65d19a056057bfd37c111a903ef1"><div class="ttname"><a href="class_parameter_acceptor.html#a232f65d19a056057bfd37c111a903ef1">ParameterAcceptor::parameters</a></div><div class="ttdeci">std::map&lt; std::string, boost::any &gt; parameters</div><div class="ttdef"><b>Definition:</b> <a href="parameter__acceptor_8h_source.html#l00458">parameter_acceptor.h:458</a></div></div>
 <div class="ttc" id="namespacedealii_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/namespacedealii.html">dealii</a></div></div>
-<div class="ttc" id="class_parameter_acceptor_html_ad823f9aff71602773356405bc4566e55"><div class="ttname"><a href="class_parameter_acceptor.html#ad823f9aff71602773356405bc4566e55">ParameterAcceptor::add_parameter</a></div><div class="ttdeci">void add_parameter(ParameterHandler &amp;prm, T *parameter, const std::string &amp;entry, const std::string &amp;default_value, const Patterns::PatternBase &amp;pattern=Patterns::Anything(), const std::string &amp;documentation=std::string())</div><div class="ttdef"><b>Definition:</b> <a href="parameter__acceptor_8h_source.html#l00430">parameter_acceptor.h:430</a></div></div>
+<div class="ttc" id="class_parameter_acceptor_html_ad823f9aff71602773356405bc4566e55"><div class="ttname"><a href="class_parameter_acceptor.html#ad823f9aff71602773356405bc4566e55">ParameterAcceptor::add_parameter</a></div><div class="ttdeci">void add_parameter(ParameterHandler &amp;prm, T *parameter, const std::string &amp;entry, const std::string &amp;default_value, const Patterns::PatternBase &amp;pattern=Patterns::Anything(), const std::string &amp;documentation=std::string())</div><div class="ttdef"><b>Definition:</b> <a href="parameter__acceptor_8h_source.html#l00167">parameter_acceptor.h:167</a></div></div>
 <div class="ttc" id="classPatterns_1_1PatternBase_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classPatterns_1_1PatternBase.html">Patterns::PatternBase</a></div></div>
-<div class="ttc" id="class_parameter_acceptor_html_a5175ae473c3b15d70dcf74e40b6dc2c0"><div class="ttname"><a href="class_parameter_acceptor.html#a5175ae473c3b15d70dcf74e40b6dc2c0">ParameterAcceptor::acceptor_id</a></div><div class="ttdeci">const unsigned int acceptor_id</div><div class="ttdef"><b>Definition:</b> <a href="parameter__acceptor_8h_source.html#l00452">parameter_acceptor.h:452</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_5401fe99141ed2453494b7c40eaaa779.html">deal2lkit</a></li><li class="navelem"><a class="el" href="parameter__acceptor_8h.html">parameter_acceptor.h</a></li>
-    <li class="footer">Generated on Mon Nov 9 2015 08:05:50 for deal2lkit: A ToolKit library for Deal.II by
+    <li class="footer">Generated on Mon Nov 9 2015 15:36:18 for deal2lkit: A ToolKit library for deal.II by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

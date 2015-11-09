@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>deal2lkit: A ToolKit library for Deal.II: source/ida_interface.cc Source File</title>
+<title>deal2lkit: A ToolKit library for deal.II: source/ida_interface.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -37,7 +37,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">deal2lkit: A ToolKit library for Deal.II
+   <div id="projectname">deal2lkit: A ToolKit library for deal.II
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('ida__interface_8cc_source.html','');})
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">using namespace </span><a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/namespacedealii.html">dealii</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<a class="code" href="namespace_d2_k___n_a_m_e_s_p_a_c_e___o_p_e_n.html">D2K_NAMESPACE_OPEN</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;D2K_NAMESPACE_OPEN</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#ifdef DEAL_II_WITH_MPI</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="ida__interface_8cc.html#a1ab928d0a50c04c230c20faf4c99583c">   43</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="ida__interface_8cc.html#a1ab928d0a50c04c230c20faf4c99583c">copy</a>(<a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classTrilinosWrappers_1_1MPI_1_1Vector.html">TrilinosWrappers::MPI::Vector</a> &amp;dst, <span class="keyword">const</span> N_Vector &amp;src)</div>
@@ -308,14 +308,14 @@ $(document).ready(function(){initNavTree('ida__interface_8cc_source.html','');})
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  solver(bubble),</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  is_initialized(false)</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;{</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <a class="code" href="class_i_d_a_interface.html#a815d2f97992647fe195b0fcadbdc369a">initial_step_size</a> = 1e-4;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <a class="code" href="class_i_d_a_interface.html#a701c60a4a81a8e3983c6abf38a81fb73">min_step_size</a> = 1e-6;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  initial_step_size = 1e-4;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  min_step_size = 1e-6;</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <a class="code" href="class_i_d_a_interface.html#a2ba04b1e5f2de9c793086e05883781d2">abs_tol</a> = 1e-6;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <a class="code" href="class_i_d_a_interface.html#a206ab56bda11522ddc99e4cdddeb156f">rel_tol</a> = 1e-8;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  abs_tol = 1e-6;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  rel_tol = 1e-8;</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <a class="code" href="class_i_d_a_interface.html#a08c696e36e1652a0b8ada055b8aa8edf">ida_mem</a> = IDACreate();</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <a class="code" href="class_i_d_a_interface.html#aabce4359919af5c5d7ac15831737cb28">is_initialized</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  ida_mem = IDACreate();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  is_initialized = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;}</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
@@ -645,7 +645,7 @@ $(document).ready(function(){initNavTree('ida__interface_8cc_source.html','');})
 <div class="ttc" id="classPatterns_1_1Selection_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classPatterns_1_1Selection.html">Patterns::Selection</a></div></div>
 <div class="ttc" id="classBlockVectorBase_html_a9edcdd1e0e1d0c7d1c50e624342fccc1"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classBlockVectorBase.html#a9edcdd1e0e1d0c7d1c50e624342fccc1">BlockVectorBase&lt; Vector&lt; Number &gt; &gt;::size</a></div><div class="ttdeci">std::size_t size() const</div></div>
 <div class="ttc" id="group__Exceptions_html_ga9442b63275c9ef3fab29bc222831c49c"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/group__Exceptions.html#ga9442b63275c9ef3fab29bc222831c49c">AssertDimension</a></div><div class="ttdeci">#define AssertDimension(dim1, dim2)</div></div>
-<div class="ttc" id="class_parameter_acceptor_html"><div class="ttname"><a href="class_parameter_acceptor.html">ParameterAcceptor</a></div><div class="ttdef"><b>Definition:</b> <a href="parameter__acceptor_8h_source.html#l00335">parameter_acceptor.h:335</a></div></div>
+<div class="ttc" id="class_parameter_acceptor_html"><div class="ttname"><a href="class_parameter_acceptor.html">ParameterAcceptor</a></div><div class="ttdef"><b>Definition:</b> <a href="parameter__acceptor_8h_source.html#l00072">parameter_acceptor.h:72</a></div></div>
 <div class="ttc" id="class_i_d_a_interface_html_adb332efb07d39318bbddf22f64fee640"><div class="ttname"><a href="class_i_d_a_interface.html#adb332efb07d39318bbddf22f64fee640">IDAInterface::IDAInterface</a></div><div class="ttdeci">IDAInterface(SundialsInterface&lt; VEC &gt; &amp;solver)</div><div class="ttdef"><b>Definition:</b> <a href="ida__interface_8cc_source.html#l00206">ida_interface.cc:206</a></div></div>
 <div class="ttc" id="sundials__interface_8h_html"><div class="ttname"><a href="sundials__interface_8h.html">sundials_interface.h</a></div></div>
 <div class="ttc" id="classTrilinosWrappers_1_1VectorBase_html_acf16f077c8bd04952d8c1af54c6bd21a"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classTrilinosWrappers_1_1VectorBase.html#acf16f077c8bd04952d8c1af54c6bd21a">TrilinosWrappers::VectorBase::locally_owned_elements</a></div><div class="ttdeci">IndexSet locally_owned_elements() const </div></div>
@@ -657,16 +657,11 @@ $(document).ready(function(){initNavTree('ida__interface_8cc_source.html','');})
 <div class="ttc" id="trilinos__parallel__block__vector_8h_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/trilinos__parallel__block__vector_8h.html">trilinos_parallel_block_vector.h</a></div></div>
 <div class="ttc" id="classIndexSet_html_a01d558d9a1ec0c5c06a31d3eef4c15de"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classIndexSet.html#a01d558d9a1ec0c5c06a31d3eef4c15de">IndexSet::n_elements</a></div><div class="ttdeci">size_type n_elements() const </div></div>
 <div class="ttc" id="classTrilinosWrappers_1_1MPI_1_1Vector_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classTrilinosWrappers_1_1MPI_1_1Vector.html">TrilinosWrappers::MPI::Vector</a></div></div>
-<div class="ttc" id="class_i_d_a_interface_html_aabce4359919af5c5d7ac15831737cb28"><div class="ttname"><a href="class_i_d_a_interface.html#aabce4359919af5c5d7ac15831737cb28">IDAInterface::is_initialized</a></div><div class="ttdeci">bool is_initialized</div><div class="ttdef"><b>Definition:</b> <a href="ida__interface_8h_source.html#l00124">ida_interface.h:124</a></div></div>
 <div class="ttc" id="group__Exceptions_html_gafc0ca7ad85b3ebd64e8e51689ac85caf"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/group__Exceptions.html#gafc0ca7ad85b3ebd64e8e51689ac85caf">AssertThrow</a></div><div class="ttdeci">#define AssertThrow(cond, exc)</div></div>
-<div class="ttc" id="class_i_d_a_interface_html_a206ab56bda11522ddc99e4cdddeb156f"><div class="ttname"><a href="class_i_d_a_interface.html#a206ab56bda11522ddc99e4cdddeb156f">IDAInterface::rel_tol</a></div><div class="ttdeci">double rel_tol</div><div class="ttdef"><b>Definition:</b> <a href="ida__interface_8h_source.html#l00094">ida_interface.h:94</a></div></div>
-<div class="ttc" id="namespace_d2_k___n_a_m_e_s_p_a_c_e___o_p_e_n_html"><div class="ttname"><a href="namespace_d2_k___n_a_m_e_s_p_a_c_e___o_p_e_n.html">D2K_NAMESPACE_OPEN</a></div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cc_source.html#l00027">utilities.cc:27</a></div></div>
 <div class="ttc" id="ida__interface_8cc_html_a347df59d1925b8015c6abfffe8c646d2"><div class="ttname"><a href="ida__interface_8cc.html#a347df59d1925b8015c6abfffe8c646d2">t_dae_solve</a></div><div class="ttdeci">int t_dae_solve(IDAMem IDA_mem, N_Vector b, N_Vector weight, N_Vector yy, N_Vector yp, N_Vector resp)</div><div class="ttdef"><b>Definition:</b> <a href="ida__interface_8cc_source.html#l00173">ida_interface.cc:173</a></div></div>
 <div class="ttc" id="ida__interface_8cc_html_aa2642994ef4ccf74112ffc6ec39d1b3d"><div class="ttname"><a href="ida__interface_8cc.html#aa2642994ef4ccf74112ffc6ec39d1b3d">t_dae_residual</a></div><div class="ttdeci">int t_dae_residual(realtype tt, N_Vector yy, N_Vector yp, N_Vector rr, void *user_data)</div><div class="ttdef"><b>Definition:</b> <a href="ida__interface_8cc_source.html#l00122">ida_interface.cc:122</a></div></div>
 <div class="ttc" id="classPatterns_1_1Bool_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classPatterns_1_1Bool.html">Patterns::Bool</a></div></div>
 <div class="ttc" id="classParameterHandler_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a></div></div>
-<div class="ttc" id="class_i_d_a_interface_html_a701c60a4a81a8e3983c6abf38a81fb73"><div class="ttname"><a href="class_i_d_a_interface.html#a701c60a4a81a8e3983c6abf38a81fb73">IDAInterface::min_step_size</a></div><div class="ttdeci">double min_step_size</div><div class="ttdef"><b>Definition:</b> <a href="ida__interface_8h_source.html#l00088">ida_interface.h:88</a></div></div>
-<div class="ttc" id="class_i_d_a_interface_html_a815d2f97992647fe195b0fcadbdc369a"><div class="ttname"><a href="class_i_d_a_interface.html#a815d2f97992647fe195b0fcadbdc369a">IDAInterface::initial_step_size</a></div><div class="ttdeci">double initial_step_size</div><div class="ttdef"><b>Definition:</b> <a href="ida__interface_8h_source.html#l00085">ida_interface.h:85</a></div></div>
 <div class="ttc" id="class_sundials_interface_html_a0226a2d16dce1af1d6590f45a0dfa08f"><div class="ttname"><a href="class_sundials_interface.html#a0226a2d16dce1af1d6590f45a0dfa08f">SundialsInterface::residual</a></div><div class="ttdeci">virtual int residual(const double t, const VEC &amp;y, const VEC &amp;y_dot, VEC &amp;dst)=0</div></div>
 <div class="ttc" id="class_i_d_a_interface_html_a535c35503f0e6a24dbbc5cca9978c2ec"><div class="ttname"><a href="class_i_d_a_interface.html#a535c35503f0e6a24dbbc5cca9978c2ec">IDAInterface::declare_parameters</a></div><div class="ttdeci">virtual void declare_parameters(ParameterHandler &amp;prm)</div><div class="ttdef"><b>Definition:</b> <a href="ida__interface_8cc_source.html#l00230">ida_interface.cc:230</a></div></div>
 <div class="ttc" id="utilities_8h_html_a404b9edc38fc645a8913ccaf22d117ab"><div class="ttname"><a href="utilities_8h.html#a404b9edc38fc645a8913ccaf22d117ab">type</a></div><div class="ttdeci">std::string type(const T &amp;t)</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8h_source.html#l00426">utilities.h:426</a></div></div>
@@ -675,7 +670,6 @@ $(document).ready(function(){initNavTree('ida__interface_8cc_source.html','');})
 <div class="ttc" id="classTrilinosWrappers_1_1MPI_1_1BlockVector_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classTrilinosWrappers_1_1MPI_1_1BlockVector.html">TrilinosWrappers::MPI::BlockVector</a></div></div>
 <div class="ttc" id="include_2deal_8II_2base_2utilities_8h_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/include_2deal_8II_2base_2utilities_8h.html">utilities.h</a></div></div>
 <div class="ttc" id="class_sundials_interface_html_a87f46ceee2df7877047903088b5fde9b"><div class="ttname"><a href="class_sundials_interface.html#a87f46ceee2df7877047903088b5fde9b">SundialsInterface::solve_jacobian_system</a></div><div class="ttdeci">virtual int solve_jacobian_system(const double t, const VEC &amp;y, const VEC &amp;y_dot, const VEC &amp;residual, const double alpha, const VEC &amp;src, VEC &amp;dst) const  =0</div></div>
-<div class="ttc" id="class_i_d_a_interface_html_a2ba04b1e5f2de9c793086e05883781d2"><div class="ttname"><a href="class_i_d_a_interface.html#a2ba04b1e5f2de9c793086e05883781d2">IDAInterface::abs_tol</a></div><div class="ttdeci">double abs_tol</div><div class="ttdef"><b>Definition:</b> <a href="ida__interface_8h_source.html#l00091">ida_interface.h:91</a></div></div>
 <div class="ttc" id="class_i_d_a_interface_html_a680d9db0bf5f2f5bb8bebfeac23c2c83"><div class="ttname"><a href="class_i_d_a_interface.html#a680d9db0bf5f2f5bb8bebfeac23c2c83">IDAInterface::reset_ode</a></div><div class="ttdeci">void reset_ode(const double t, VEC &amp;y, VEC &amp;yp, double h, unsigned int max_steps, bool first_step)</div><div class="ttdef"><b>Definition:</b> <a href="ida__interface_8cc_source.html#l00409">ida_interface.cc:409</a></div></div>
 <div class="ttc" id="classBlockVector_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classBlockVector.html">BlockVector</a></div></div>
 <div class="ttc" id="ida__interface_8cc_html_a1ab928d0a50c04c230c20faf4c99583c"><div class="ttname"><a href="ida__interface_8cc.html#a1ab928d0a50c04c230c20faf4c99583c">copy</a></div><div class="ttdeci">D2K_NAMESPACE_OPEN void copy(TrilinosWrappers::MPI::Vector &amp;dst, const N_Vector &amp;src)</div><div class="ttdef"><b>Definition:</b> <a href="ida__interface_8cc_source.html#l00043">ida_interface.cc:43</a></div></div>
@@ -683,7 +677,6 @@ $(document).ready(function(){initNavTree('ida__interface_8cc_source.html','');})
 <div class="ttc" id="classPatterns_1_1Double_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classPatterns_1_1Double.html">Patterns::Double</a></div></div>
 <div class="ttc" id="class_sundials_interface_html_a420c541c45238e2d0f9b76812f13bbd6"><div class="ttname"><a href="class_sundials_interface.html#a420c541c45238e2d0f9b76812f13bbd6">SundialsInterface::create_new_vector</a></div><div class="ttdeci">virtual shared_ptr&lt; VEC &gt; create_new_vector() const  =0</div></div>
 <div class="ttc" id="class_sundials_interface_html_aed6926f5f779928a4491189331a017ca"><div class="ttname"><a href="class_sundials_interface.html#aed6926f5f779928a4491189331a017ca">SundialsInterface::setup_jacobian</a></div><div class="ttdeci">virtual int setup_jacobian(const double t, const VEC &amp;y, const VEC &amp;y_dot, const VEC &amp;residual, const double alpha)=0</div></div>
-<div class="ttc" id="class_i_d_a_interface_html_a08c696e36e1652a0b8ada055b8aa8edf"><div class="ttname"><a href="class_i_d_a_interface.html#a08c696e36e1652a0b8ada055b8aa8edf">IDAInterface::ida_mem</a></div><div class="ttdeci">void * ida_mem</div><div class="ttdef"><b>Definition:</b> <a href="ida__interface_8h_source.html#l00133">ida_interface.h:133</a></div></div>
 <div class="ttc" id="classBlockVectorBase_html_a2be76a4ee032bb5af11f24d1d9ecfe5c"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classBlockVectorBase.html#a2be76a4ee032bb5af11f24d1d9ecfe5c">BlockVectorBase&lt; Vector &gt;::locally_owned_elements</a></div><div class="ttdeci">IndexSet locally_owned_elements() const</div></div>
 <div class="ttc" id="classIndexSet_html_aa0a81e443ce8b800e2284a72332f6771"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classIndexSet.html#aa0a81e443ce8b800e2284a72332f6771">IndexSet::nth_index_in_set</a></div><div class="ttdeci">size_type nth_index_in_set(const unsigned int local_index) const </div></div>
 <div class="ttc" id="namespacedealii_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/namespacedealii.html">dealii</a></div></div>
@@ -696,7 +689,7 @@ $(document).ready(function(){initNavTree('ida__interface_8cc_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="ida__interface_8cc.html">ida_interface.cc</a></li>
-    <li class="footer">Generated on Mon Nov 9 2015 08:05:50 for deal2lkit: A ToolKit library for Deal.II by
+    <li class="footer">Generated on Mon Nov 9 2015 15:36:18 for deal2lkit: A ToolKit library for deal.II by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

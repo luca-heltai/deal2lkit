@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>deal2lkit: A ToolKit library for Deal.II: include/deal2lkit/parsed_solver.h Source File</title>
+<title>deal2lkit: A ToolKit library for deal.II: include/deal2lkit/parsed_solver.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -37,7 +37,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">deal2lkit: A ToolKit library for Deal.II
+   <div id="projectname">deal2lkit: A ToolKit library for deal.II
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('parsed__solver_8h_source.html','');});
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">using namespace </span><a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/namespacedealii.html">dealii</a>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<a class="code" href="namespace_d2_k___n_a_m_e_s_p_a_c_e___o_p_e_n.html">D2K_NAMESPACE_OPEN</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;D2K_NAMESPACE_OPEN</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VECTOR&gt;</div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="parsed__solver_8h.html#a82bfc1508464e695511526871e08c629">   42</a></span>&#160;std::function&lt;void(VECTOR &amp;, bool)&gt; <a class="code" href="parsed__solver_8h.html#a82bfc1508464e695511526871e08c629">default_reinit</a>()</div>
@@ -178,13 +178,13 @@ $(document).ready(function(){initNavTree('parsed__solver_8h_source.html','');});
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> MySolver &gt;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">void</span> initialize_solver(MySolver *);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="class_parsed_solver.html#a417ba9ea0730c5b777d50fbac4a6e1eb">  135</a></span>&#160;  std::string <a class="code" href="class_parsed_solver.html#a417ba9ea0730c5b777d50fbac4a6e1eb">solver_name</a>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  std::string solver_name;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="class_parsed_solver.html#a084d1b144de245792da2fe673fb2ffce">  141</a></span>&#160;  <span class="keywordtype">long</span> <span class="keywordtype">int</span> <a class="code" href="class_parsed_solver.html#a084d1b144de245792da2fe673fb2ffce">max_iterations</a>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordtype">long</span> <span class="keywordtype">int</span> max_iterations;</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="class_parsed_solver.html#a6dc28bbb99ed2a056dd3feec1b495468">  147</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="class_parsed_solver.html#a6dc28bbb99ed2a056dd3feec1b495468">reduction</a>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordtype">double</span> reduction;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="class_parsed_solver.html#a6ffac1ba54355b38881f16f2520224ab">  152</a></span>&#160;  shared_ptr&lt;Solver&lt;VECTOR&gt; &gt; <a class="code" href="class_parsed_solver.html#a6ffac1ba54355b38881f16f2520224ab">solver</a>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  shared_ptr&lt;Solver&lt;VECTOR&gt; &gt; solver;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;};</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">// ============================================================</span></div>
@@ -232,7 +232,7 @@ $(document).ready(function(){initNavTree('parsed__solver_8h_source.html','');});
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> VECTOR&gt;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> MySolver &gt;</div>
-<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="class_parsed_solver.html#ad5935c3d016c4a57dbe8cb02746d5671">  200</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_parsed_solver.html#ad5935c3d016c4a57dbe8cb02746d5671">ParsedSolver&lt;VECTOR&gt;::initialize_solver</a>(MySolver *s)</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_parsed_solver.html">ParsedSolver&lt;VECTOR&gt;::initialize_solver</a>(MySolver *s)</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;{</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  solver = <a class="code" href="utilities_8h.html#a0701af1a2bda2f87929c69a1c669bbf0">SP</a>(s);</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  (<a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classLinearOperator.html">LinearOperator&lt;VECTOR,VECTOR&gt;</a> &amp;)(*<span class="keyword">this</span>) = <a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/group__LAOperators.html#ga2dabf1d1d263254715fef3a2b6c3a895">inverse_operator</a>(op, *s, prec);</div>
@@ -284,9 +284,8 @@ $(document).ready(function(){initNavTree('parsed__solver_8h_source.html','');});
 <div class="ttc" id="classSolverFGMRES_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classSolverFGMRES.html">SolverFGMRES</a></div></div>
 <div class="ttc" id="classPatterns_1_1Selection_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classPatterns_1_1Selection.html">Patterns::Selection</a></div></div>
 <div class="ttc" id="class_parsed_solver_html_aa540f1ba45b032c0f728ba47db506740"><div class="ttname"><a href="class_parsed_solver.html#aa540f1ba45b032c0f728ba47db506740">ParsedSolver::ParsedSolver</a></div><div class="ttdeci">ParsedSolver(const std::string &amp;name=&quot;&quot;, const std::string &amp;default_solver=&quot;cg&quot;, const long int iter=1000, const double reduction=1e-8, const LinearOperator&lt; VECTOR &gt; &amp;op=identity_operator&lt;VECTOR &gt;(default_reinit&lt; VECTOR &gt;()), const LinearOperator&lt; VECTOR &gt; &amp;prec=identity_operator&lt;VECTOR &gt;(default_reinit&lt; VECTOR &gt;()))</div><div class="ttdef"><b>Definition:</b> <a href="parsed__solver_8h_source.html#l00160">parsed_solver.h:160</a></div></div>
-<div class="ttc" id="class_parameter_acceptor_html"><div class="ttname"><a href="class_parameter_acceptor.html">ParameterAcceptor</a></div><div class="ttdef"><b>Definition:</b> <a href="parameter__acceptor_8h_source.html#l00335">parameter_acceptor.h:335</a></div></div>
+<div class="ttc" id="class_parameter_acceptor_html"><div class="ttname"><a href="class_parameter_acceptor.html">ParameterAcceptor</a></div><div class="ttdef"><b>Definition:</b> <a href="parameter__acceptor_8h_source.html#l00072">parameter_acceptor.h:72</a></div></div>
 <div class="ttc" id="parameter__acceptor_8h_html"><div class="ttname"><a href="parameter__acceptor_8h.html">parameter_acceptor.h</a></div></div>
-<div class="ttc" id="class_parsed_solver_html_a084d1b144de245792da2fe673fb2ffce"><div class="ttname"><a href="class_parsed_solver.html#a084d1b144de245792da2fe673fb2ffce">ParsedSolver::max_iterations</a></div><div class="ttdeci">long int max_iterations</div><div class="ttdef"><b>Definition:</b> <a href="parsed__solver_8h_source.html#l00141">parsed_solver.h:141</a></div></div>
 <div class="ttc" id="classSolverBicgstab_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classSolverBicgstab.html">SolverBicgstab</a></div></div>
 <div class="ttc" id="solver__minres_8h_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/solver__minres_8h.html">solver_minres.h</a></div></div>
 <div class="ttc" id="utilities_8h_html"><div class="ttname"><a href="utilities_8h.html">utilities.h</a></div></div>
@@ -297,18 +296,15 @@ $(document).ready(function(){initNavTree('parsed__solver_8h_source.html','');});
 <div class="ttc" id="config_8h_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/config_8h.html">config.h</a></div></div>
 <div class="ttc" id="solver__cg_8h_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/solver__cg_8h.html">solver_cg.h</a></div></div>
 <div class="ttc" id="utilities_8h_html_a0701af1a2bda2f87929c69a1c669bbf0"><div class="ttname"><a href="utilities_8h.html#a0701af1a2bda2f87929c69a1c669bbf0">SP</a></div><div class="ttdeci">shared_ptr&lt; T &gt; SP(T *t)</div><div class="ttdef"><b>Definition:</b> <a href="utilities_8h_source.html#l00448">utilities.h:448</a></div></div>
-<div class="ttc" id="namespace_d2_k___n_a_m_e_s_p_a_c_e___o_p_e_n_html"><div class="ttname"><a href="namespace_d2_k___n_a_m_e_s_p_a_c_e___o_p_e_n.html">D2K_NAMESPACE_OPEN</a></div><div class="ttdef"><b>Definition:</b> <a href="utilities_8cc_source.html#l00027">utilities.cc:27</a></div></div>
 <div class="ttc" id="class_parsed_solver_html_acb8fff21bc081a175bdb5063e5ba0a91"><div class="ttname"><a href="class_parsed_solver.html#acb8fff21bc081a175bdb5063e5ba0a91">ParsedSolver::prec</a></div><div class="ttdeci">LinearOperator&lt; VECTOR &gt; prec</div><div class="ttdef"><b>Definition:</b> <a href="parsed__solver_8h_source.html#l00119">parsed_solver.h:119</a></div></div>
 <div class="ttc" id="classParameterHandler_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a></div></div>
 <div class="ttc" id="classLinearOperator_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classLinearOperator.html">LinearOperator</a></div></div>
 <div class="ttc" id="class_parsed_solver_html_a3cc29f45c7bfd339c32956fb6aa8459b"><div class="ttname"><a href="class_parsed_solver.html#a3cc29f45c7bfd339c32956fb6aa8459b">ParsedSolver::control</a></div><div class="ttdeci">ReductionControl control</div><div class="ttdef"><b>Definition:</b> <a href="parsed__solver_8h_source.html#l00124">parsed_solver.h:124</a></div></div>
 <div class="ttc" id="classReductionControl_html_a86d646cf79f42081f01aefd63869d249"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classReductionControl.html#a86d646cf79f42081f01aefd63869d249">ReductionControl::declare_parameters</a></div><div class="ttdeci">static void declare_parameters(ParameterHandler &amp;param)</div></div>
 <div class="ttc" id="group__Exceptions_html_ga70a0bb353656e704acf927945277bbc6"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/group__Exceptions.html#ga70a0bb353656e704acf927945277bbc6">Assert</a></div><div class="ttdeci">#define Assert(cond, exc)</div></div>
-<div class="ttc" id="class_parsed_solver_html_ad5935c3d016c4a57dbe8cb02746d5671"><div class="ttname"><a href="class_parsed_solver.html#ad5935c3d016c4a57dbe8cb02746d5671">ParsedSolver::initialize_solver</a></div><div class="ttdeci">void initialize_solver(MySolver *)</div><div class="ttdef"><b>Definition:</b> <a href="parsed__solver_8h_source.html#l00200">parsed_solver.h:200</a></div></div>
 <div class="ttc" id="classSolverRichardson_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classSolverRichardson.html">SolverRichardson</a></div></div>
 <div class="ttc" id="classSolverCG_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classSolverCG.html">SolverCG</a></div></div>
 <div class="ttc" id="group__LAOperators_html_ga2dabf1d1d263254715fef3a2b6c3a895"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/group__LAOperators.html#ga2dabf1d1d263254715fef3a2b6c3a895">inverse_operator</a></div><div class="ttdeci">LinearOperator&lt; typename Solver::vector_type, typename Solver::vector_type &gt; inverse_operator(const LinearOperator&lt; typename Solver::vector_type, typename Solver::vector_type &gt; &amp;op, Solver &amp;solver, const Preconditioner &amp;preconditioner)</div></div>
-<div class="ttc" id="class_parsed_solver_html_a6dc28bbb99ed2a056dd3feec1b495468"><div class="ttname"><a href="class_parsed_solver.html#a6dc28bbb99ed2a056dd3feec1b495468">ParsedSolver::reduction</a></div><div class="ttdeci">double reduction</div><div class="ttdef"><b>Definition:</b> <a href="parsed__solver_8h_source.html#l00147">parsed_solver.h:147</a></div></div>
 <div class="ttc" id="solver__control_8h_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/solver__control_8h.html">solver_control.h</a></div></div>
 <div class="ttc" id="class_parsed_solver_html_a6b5c9855ddf192408701d4005c668c65"><div class="ttname"><a href="class_parsed_solver.html#a6b5c9855ddf192408701d4005c668c65">ParsedSolver::declare_parameters</a></div><div class="ttdeci">virtual void declare_parameters(ParameterHandler &amp;prm)</div><div class="ttdef"><b>Definition:</b> <a href="parsed__solver_8h_source.html#l00176">parsed_solver.h:176</a></div></div>
 <div class="ttc" id="solver_8h_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/solver_8h.html">solver.h</a></div></div>
@@ -320,8 +316,6 @@ $(document).ready(function(){initNavTree('parsed__solver_8h_source.html','');});
 <div class="ttc" id="classSolverGMRES_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classSolverGMRES.html">SolverGMRES</a></div></div>
 <div class="ttc" id="solver__bicgstab_8h_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/solver__bicgstab_8h.html">solver_bicgstab.h</a></div></div>
 <div class="ttc" id="class_parsed_solver_html_a8a11047efa43f3f171c14b3b127f225a"><div class="ttname"><a href="class_parsed_solver.html#a8a11047efa43f3f171c14b3b127f225a">ParsedSolver::parse_parameters_call_back</a></div><div class="ttdeci">virtual void parse_parameters_call_back()</div><div class="ttdef"><b>Definition:</b> <a href="parsed__solver_8h_source.html#l00207">parsed_solver.h:207</a></div></div>
-<div class="ttc" id="class_parsed_solver_html_a417ba9ea0730c5b777d50fbac4a6e1eb"><div class="ttname"><a href="class_parsed_solver.html#a417ba9ea0730c5b777d50fbac4a6e1eb">ParsedSolver::solver_name</a></div><div class="ttdeci">std::string solver_name</div><div class="ttdef"><b>Definition:</b> <a href="parsed__solver_8h_source.html#l00135">parsed_solver.h:135</a></div></div>
-<div class="ttc" id="class_parsed_solver_html_a6ffac1ba54355b38881f16f2520224ab"><div class="ttname"><a href="class_parsed_solver.html#a6ffac1ba54355b38881f16f2520224ab">ParsedSolver::solver</a></div><div class="ttdeci">shared_ptr&lt; Solver&lt; VECTOR &gt; &gt; solver</div><div class="ttdef"><b>Definition:</b> <a href="parsed__solver_8h_source.html#l00152">parsed_solver.h:152</a></div></div>
 <div class="ttc" id="classReductionControl_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/classReductionControl.html">ReductionControl</a></div></div>
 <div class="ttc" id="solver__richardson_8h_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/solver__richardson_8h.html">solver_richardson.h</a></div></div>
 <div class="ttc" id="namespacedealii_html"><div class="ttname"><a href="http://www.dealii.org/developer/doxygen/deal.II/namespacedealii.html">dealii</a></div></div>
@@ -332,7 +326,7 @@ $(document).ready(function(){initNavTree('parsed__solver_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_5401fe99141ed2453494b7c40eaaa779.html">deal2lkit</a></li><li class="navelem"><a class="el" href="parsed__solver_8h.html">parsed_solver.h</a></li>
-    <li class="footer">Generated on Mon Nov 9 2015 08:05:50 for deal2lkit: A ToolKit library for Deal.II by
+    <li class="footer">Generated on Mon Nov 9 2015 15:36:18 for deal2lkit: A ToolKit library for deal.II by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

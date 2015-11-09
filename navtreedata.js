@@ -1,13 +1,6 @@
 var NAVTREE =
 [
-  [ "deal2lkit: A ToolKit library for Deal.II", "index.html", [
-    [ "deal2lkit documentation", "index.html", [
-      [ "Introduction", "index.html#intro", null ],
-      [ "Motivation", "index.html#motivation", null ],
-      [ "Modules overview", "index.html#overview", [
-        [ "ParameterAcceptor: the base of all deal2lkit classes", "index.html#parameter_acceptor", null ]
-      ] ]
-    ] ],
+  [ "deal2lkit: A ToolKit library for deal.II", "index.html", [
     [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
@@ -21,7 +14,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
+        [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
@@ -43,7 +36,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_parsed_mapped_functions.html#a2990bf8fb2c8c20b77c9559420ef0755"
+"ida__interface_8cc.html#a347df59d1925b8015c6abfffe8c646d2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

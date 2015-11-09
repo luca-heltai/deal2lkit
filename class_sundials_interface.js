@@ -11,6 +11,5 @@ var class_sundials_interface =
     [ "residual", "class_sundials_interface.html#a0226a2d16dce1af1d6590f45a0dfa08f", null ],
     [ "setup_jacobian", "class_sundials_interface.html#aed6926f5f779928a4491189331a017ca", null ],
     [ "solve_jacobian_system", "class_sundials_interface.html#a87f46ceee2df7877047903088b5fde9b", null ],
-    [ "solver_should_restart", "class_sundials_interface.html#a4a0cf1213c7a02cca14ae24bc8dc74e6", null ],
-    [ "communicator", "class_sundials_interface.html#a2f9b0d3e191e5511d76dc6b0c7dde013", null ]
+    [ "solver_should_restart", "class_sundials_interface.html#a4a0cf1213c7a02cca14ae24bc8dc74e6", null ]
 ];

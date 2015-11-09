@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>deal2lkit: A ToolKit library for Deal.II: ParameterAcceptor Class Reference</title>
+<title>deal2lkit: A ToolKit library for deal.II: ParameterAcceptor Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -37,7 +37,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">deal2lkit: A ToolKit library for Deal.II
+   <div id="projectname">deal2lkit: A ToolKit library for deal.II
    </div>
   </td>
    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -99,8 +99,6 @@ $(document).ready(function(){initNavTree('class_parameter_acceptor.html','');});
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_parameter_acceptor-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ParameterAcceptor Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -190,46 +188,17 @@ Static Public Attributes</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a52134c59ec98830230c23e080c841705"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parameter_acceptor.html#a52134c59ec98830230c23e080c841705">section_name</a></td></tr>
 <tr class="separator:a52134c59ec98830230c23e080c841705"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a5175ae473c3b15d70dcf74e40b6dc2c0"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parameter_acceptor.html#a5175ae473c3b15d70dcf74e40b6dc2c0">acceptor_id</a></td></tr>
-<tr class="separator:a5175ae473c3b15d70dcf74e40b6dc2c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a232f65d19a056057bfd37c111a903ef1"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, boost::any &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parameter_acceptor.html#a232f65d19a056057bfd37c111a903ef1">parameters</a></td></tr>
-<tr class="separator:a232f65d19a056057bfd37c111a903ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:ad3bc4a3c5496637eaf4fa1f075ec4f74"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="elRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classSmartPointer.html">SmartPointer</a>&lt; <a class="el" href="class_parameter_acceptor.html">ParameterAcceptor</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parameter_acceptor.html#ad3bc4a3c5496637eaf4fa1f075ec4f74">class_list</a></td></tr>
-<tr class="separator:ad3bc4a3c5496637eaf4fa1f075ec4f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A parameter acceptor base class. This class is used to define a public interface for classes wich want to use a <a class="elRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a> to handle parameters. Such basic interface provides two subscription mechanisms: a <b>global subscription mechanism</b> and a <b>local subscription mechanism</b>.</p>
-<p>The global subscription mechanism is such that whenever a class that was derived by <a class="el" href="class_parameter_acceptor.html">ParameterAcceptor</a> is constructed, a static registry (<a class="el" href="class_parameter_acceptor.html#ad3bc4a3c5496637eaf4fa1f075ec4f74">ParameterAcceptor::class_list</a>) in the base class is updated with a pointer to the derived class. Such registry is traversed upon invocation of the single function <a class="el" href="class_parameter_acceptor.html#af04c215672e63f03a942ae4c55b57c27">ParameterAcceptor::initialize</a>(file.prm) which in turn calls the method <a class="el" href="class_parameter_acceptor.html#ace1609b41eeb6a5461a388061d23b1bd">ParameterAcceptor::declare_parameters()</a> for each of the registered classes, reads the file <code>file.prm</code>, (creating it first with default values if it does not exist) and subsequently calls the method <a class="el" href="class_parameter_acceptor.html#ab3ee6cabf1ff10be362ac65495183c52">ParameterAcceptor::parse_parameters()</a>, again for each of the registered classes. The method <a class="el" href="class_parameter_acceptor.html#a0aebd314633cdb2e48b159f2b9349c73">log_info()</a> can be used to extract informations about the classes that have been derived from <a class="el" href="class_parameter_acceptor.html">ParameterAcceptor</a>, and that will be parsed when calling <a class="el" href="class_parameter_acceptor.html#af04c215672e63f03a942ae4c55b57c27">ParameterAcceptor::initialize()</a>.</p>
-<p><a class="el" href="class_parameter_acceptor.html">ParameterAcceptor</a> conforms to the standard advocated in the <a href="http://www.dealii.org"><code>deal.II</code></a> documentation, and it has a pure virtual method <a class="el" href="class_parameter_acceptor.html#ace1609b41eeb6a5461a388061d23b1bd">ParameterAcceptor::declare_parameters</a> and a virtual method <a class="el" href="class_parameter_acceptor.html#ab3ee6cabf1ff10be362ac65495183c52">ParameterAcceptor::parse_parameters</a> which can be overloaded as the user whishes. However, the base class also has a default implementation of parse_parameters which exploits a <b>local subscription mechanism</b> by storing in a local registry (<a class="el" href="class_parameter_acceptor.html#a232f65d19a056057bfd37c111a903ef1">ParameterAcceptor::parameters</a>) a pointer to all variables that were declared through the <a class="el" href="class_parameter_acceptor.html#ad823f9aff71602773356405bc4566e55">ParameterAcceptor::add_parameter</a> method. Such method has the same syntax of the ParameterHandler::add_entry method, with the addition of two arguments: a <a class="elRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a> object on which ParameterHandler::add_entry will be called, and a reference to the variable that should hold the entry when a ParameterHandler::get_* methods are called. Such variable is stored in <a class="el" href="class_parameter_acceptor.html#a232f65d19a056057bfd37c111a903ef1">ParameterAcceptor::parameters</a> (local to the class instantiation) which is traversed by the default implementation of <a class="el" href="class_parameter_acceptor.html#ab3ee6cabf1ff10be362ac65495183c52">ParameterAcceptor::parse_parameters</a>. Specialized implementations are provided for the most commonly used variable types.</p>
-<p>The only function that derived classes should overload is <a class="el" href="class_parameter_acceptor.html#ace1609b41eeb6a5461a388061d23b1bd">declare_parameters()</a>. Derived classes are required to use the <a class="el" href="class_parameter_acceptor.html#ad823f9aff71602773356405bc4566e55">add_parameter()</a> function inside the declare_paramters() function. If they do so, then <a class="el" href="class_parameter_acceptor.html#ac4b7044a9e1d53c401a50565d8996022">ParameterAcceptor::parse_all_parameters()</a> will automatically populate the variables with the parsed parameters. Failure to use the <a class="el" href="class_parameter_acceptor.html#ad823f9aff71602773356405bc4566e55">add_parameter()</a> function will result in the user having to call <a class="elRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html#a7589d0ed2a7e70532853e1e378130c88">ParameterHandler::get()</a> functions to populate the variables manually.</p>
+<div class="textblock"><p>A parameter acceptor base class. This class is used to define a public interface for classes wich use <a class="elRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a> to obtain class parameters. The only function that derived classes should overload is <a class="el" href="class_parameter_acceptor.html#ace1609b41eeb6a5461a388061d23b1bd">declare_parameters()</a>. Derived classes are required to use the <a class="el" href="class_parameter_acceptor.html#ad823f9aff71602773356405bc4566e55">add_parameter()</a> function inside the declare_paramters() function. If they do so, then <a class="el" href="class_parameter_acceptor.html#ac4b7044a9e1d53c401a50565d8996022">ParameterAcceptor::parse_all_parameters()</a> will automatically populate the variables with the parsed parameters. Failure to use the <a class="el" href="class_parameter_acceptor.html#ad823f9aff71602773356405bc4566e55">add_parameter()</a> function will result in the user having to call <a class="elRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html#a7589d0ed2a7e70532853e1e378130c88">ParameterHandler::get()</a> functions to populate the variables manually.</p>
 <p>The rationale behind this class, is that we want every class to be able to declare parameters only once, and then automatically populate variables with the values from the parameter file, without having to do so manually.</p>
 <p>A typical usage of this chain of classes is the following:</p>
-<div class="fragment"><div class="line"><span class="comment">// This is your own class, derived from ParameterAcceptor</span></div>
-<div class="line"><span class="keyword">class </span>MyClass : <span class="keyword">public</span> <a class="code" href="class_parameter_acceptor.html">ParameterAcceptor</a> {</div>
-<div class="line"><span class="keyword">virtual</span> <a class="code" href="class_parameter_acceptor.html#ace1609b41eeb6a5461a388061d23b1bd">declare_parameters</a>(<a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classParameterHandler.html">ParameterHandler</a> &amp;<a class="code" href="class_parameter_acceptor.html#a96081d4cc985b722c9841fcf0c0e54ec">prm</a>) {</div>
-<div class="line"> add_parameters(prm, &amp;member_var, <span class="stringliteral">&quot;A param&quot;</span>, <span class="stringliteral">&quot;Default value&quot;</span>);</div>
-<div class="line">}</div>
-<div class="line"></div>
-<div class="line">...</div>
-<div class="line"></div>
-<div class="line">int <a class="codeRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/group__ParameterGui.html#ga0ddf1224851353fc92bfbff6f499fa97">main</a>() {</div>
-<div class="line"> <span class="comment">// Make sure you build your class BEFORE calling</span></div>
-<div class="line"> <span class="comment">// ParameterAcceptor::initialize()</span></div>
-<div class="line"> MyClass <span class="keyword">class</span>;</div>
-<div class="line"></div>
-<div class="line"> <span class="comment">// With this call, all derived classes will have their</span></div>
-<div class="line"> <span class="comment">// parameters initialized</span></div>
-<div class="line"> <a class="code" href="class_parameter_acceptor.html#af04c215672e63f03a942ae4c55b57c27">ParameterAcceptor::initialize</a>(<span class="stringliteral">&quot;file.prm&quot;</span>);</div>
-<div class="line">}</div>
-</div><!-- fragment --><p>As a convention, in <code>deal2lkit</code> all modules derived from <a class="el" href="class_parameter_acceptor.html">ParameterAcceptor</a> implement a default constructor which takes one or more optional arguments. The first optional argument is always the name of the section in the parameter file that the derived class should use to fill its local variables. By default, the utility function deal2lkit::type is used to fill the section name with a human readable version of the class name itself. For example, according to the above example, there will be a section named MyClass. Next options are the default values that will be written in the parameter file. There is no need to specify these options, as the user can always change the content of the file to make sure that the right parameters are used at run time, but this possibility allows one to design a program that does something sensible on the first run, without having to change any parameter file. </p>
+<p>code // This is your own class, derived from <a class="el" href="class_parameter_acceptor.html">ParameterAcceptor</a> class MyClass : public <a class="el" href="class_parameter_acceptor.html">ParameterAcceptor</a> { virtual <a class="el" href="class_parameter_acceptor.html#ace1609b41eeb6a5461a388061d23b1bd">declare_parameters(ParameterHandler &amp;prm)</a> { add_parameters(prm, &amp;member_var, "A param", "Default value"); }</p>
+<p>...</p>
+<p>int <a class="elRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/group__ParameterGui.html#ga0ddf1224851353fc92bfbff6f499fa97">main()</a> { // Make sure you build your class BEFORE calling // <a class="el" href="class_parameter_acceptor.html#af04c215672e63f03a942ae4c55b57c27">ParameterAcceptor::initialize()</a> MyClass class;</p>
+<p>// With this call, all derived classes will have their // parameters initialized <a class="el" href="class_parameter_acceptor.html#af04c215672e63f03a942ae4c55b57c27">ParameterAcceptor::initialize</a>("file.prm");</p>
 
-<p>Definition at line <a class="el" href="parameter__acceptor_8h_source.html#l00335">335</a> of file <a class="el" href="parameter__acceptor_8h_source.html">parameter_acceptor.h</a>.</p>
+<p>Definition at line <a class="el" href="parameter__acceptor_8h_source.html#l00072">72</a> of file <a class="el" href="parameter__acceptor_8h_source.html">parameter_acceptor.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1a5052568d2c3e748e068b6c3d822893"></a>
 <div class="memitem">
@@ -244,7 +213,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The constructor adds derived classes to the list of acceptors. If a section name is specified, then this is used to scope the parameters in the given section, otherwise a pretty printed version of the derived class is used. </p>
+<p>The constructor adds this class to the list of acceptors. If a section name is specified, then this is used to scope the parameters in the given section, otherwise a pretty printed version of the derived class is used. </p>
 
 <p>Definition at line <a class="el" href="parameter__acceptor_8cc_source.html#l00030">30</a> of file <a class="el" href="parameter__acceptor_8cc_source.html">parameter_acceptor.cc</a>.</p>
 
@@ -336,7 +305,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <p>Add a parameter the given parameter list. A pointer to the parameter is stored, so that every time the default <a class="el" href="class_parameter_acceptor.html#ab3ee6cabf1ff10be362ac65495183c52">parse_parameters()</a> function is called, this parameter is updated with the value contained in prm. </p>
 
-<p>Definition at line <a class="el" href="parameter__acceptor_8h_source.html#l00430">430</a> of file <a class="el" href="parameter__acceptor_8h_source.html">parameter_acceptor.h</a>.</p>
+<p>Definition at line <a class="el" href="parameter__acceptor_8h_source.html#l00167">167</a> of file <a class="el" href="parameter__acceptor_8h_source.html">parameter_acceptor.h</a>.</p>
 
 </div>
 </div>
@@ -550,7 +519,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <p>Parse the parameter file. This function enters the subsection returned by <a class="el" href="class_parameter_acceptor.html#abe76713f66b7319ba25a7d272126461a">get_section_name()</a> for each derived class, and parse all parameters that were added using <a class="el" href="class_parameter_acceptor.html#ad823f9aff71602773356405bc4566e55">add_parameter()</a>. </p>
 
-<p>Reimplemented in <a class="el" href="class_parsed_solver.html#af5bc56c9952a93f25813f7355397fe9d">ParsedSolver&lt; VECTOR &gt;</a>, <a class="el" href="class_error_handler.html#a464f1ba3a697df8ffcb35b0edfe1fbd3">ErrorHandler&lt; ntables &gt;</a>, <a class="el" href="class_parsed_data_out.html#a929b8f76b6a410033f1d4423124ddd6a">ParsedDataOut&lt; dim, spacedim &gt;</a>, and <a class="el" href="class_parsed_function.html#a2faeb0a75157659cce56275ef3270b0e">ParsedFunction&lt; dim, ncomponents &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="class_parsed_solver.html#af5bc56c9952a93f25813f7355397fe9d">ParsedSolver&lt; VECTOR &gt;</a>, <a class="el" href="class_error_handler.html#a464f1ba3a697df8ffcb35b0edfe1fbd3">ErrorHandler&lt; ntables &gt;</a>, and <a class="el" href="class_parsed_function.html#a2faeb0a75157659cce56275ef3270b0e">ParsedFunction&lt; dim, ncomponents &gt;</a>.</p>
 
 <p>Definition at line <a class="el" href="parameter__acceptor_8cc_source.html#l00139">139</a> of file <a class="el" href="parameter__acceptor_8cc_source.html">parameter_acceptor.cc</a>.</p>
 
@@ -586,75 +555,6 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a5175ae473c3b15d70dcf74e40b6dc2c0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const unsigned int ParameterAcceptor::acceptor_id</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The index of this specific class within the class list. </p>
-
-<p>Definition at line <a class="el" href="parameter__acceptor_8h_source.html#l00452">452</a> of file <a class="el" href="parameter__acceptor_8h_source.html">parameter_acceptor.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad3bc4a3c5496637eaf4fa1f075ec4f74"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">D2K_NAMESPACE_OPEN std::vector&lt; <a class="elRef" doxygen="/usr/local/src/d2-parallel-package/deal2lkit/build/deal.tag:http://www.dealii.org/developer/doxygen/deal.II/" href="http://www.dealii.org/developer/doxygen/deal.II/classSmartPointer.html">SmartPointer</a>&lt; <a class="el" href="class_parameter_acceptor.html">ParameterAcceptor</a> &gt; &gt; ParameterAcceptor::class_list</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A list containing all constructed classes of type <a class="el" href="class_parameter_acceptor.html">ParameterAcceptor</a>. </p>
-
-<p>Definition at line <a class="el" href="parameter__acceptor_8h_source.html#l00449">449</a> of file <a class="el" href="parameter__acceptor_8h_source.html">parameter_acceptor.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a232f65d19a056057bfd37c111a903ef1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::map&lt;std::string, boost::any&gt; ParameterAcceptor::parameters</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A map of parameters that are initialized in this class with the function add_parameter. </p>
-
-<p>Definition at line <a class="el" href="parameter__acceptor_8h_source.html#l00458">458</a> of file <a class="el" href="parameter__acceptor_8h_source.html">parameter_acceptor.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a96081d4cc985b722c9841fcf0c0e54ec"></a>
 <div class="memitem">
 <div class="memproto">
@@ -674,7 +574,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <p>Static parameter. This is used if the user does not provide one. </p>
 
-<p>Definition at line <a class="el" href="parameter__acceptor_8h_source.html#l00442">442</a> of file <a class="el" href="parameter__acceptor_8h_source.html">parameter_acceptor.h</a>.</p>
+<p>Definition at line <a class="el" href="parameter__acceptor_8h_source.html#l00179">179</a> of file <a class="el" href="parameter__acceptor_8h_source.html">parameter_acceptor.h</a>.</p>
 
 </div>
 </div>
@@ -697,7 +597,7 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <p>The subsection name for this class. </p>
 
-<p>Definition at line <a class="el" href="parameter__acceptor_8h_source.html#l00462">462</a> of file <a class="el" href="parameter__acceptor_8h_source.html">parameter_acceptor.h</a>.</p>
+<p>Definition at line <a class="el" href="parameter__acceptor_8h_source.html#l00199">199</a> of file <a class="el" href="parameter__acceptor_8h_source.html">parameter_acceptor.h</a>.</p>
 
 </div>
 </div>
@@ -711,7 +611,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_parameter_acceptor.html">ParameterAcceptor</a></li>
-    <li class="footer">Generated on Mon Nov 9 2015 08:05:50 for deal2lkit: A ToolKit library for Deal.II by
+    <li class="footer">Generated on Mon Nov 9 2015 15:36:18 for deal2lkit: A ToolKit library for deal.II by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -248,7 +248,6 @@ var searchData=
   ['get_5fshell_5fcols',['get_shell_cols',['../class_over_write_stream.html#a2ef896f3c56a5cf98e901a9638cc365c',1,'OverWriteStream']]],
   ['get_5fshell_5frows',['get_shell_rows',['../class_over_write_stream.html#a280c50557f1dd387519bf4c27aeefdf1',1,'OverWriteStream']]],
   ['get_5fsize_5finfo',['get_size_info',['http://www.dealii.org/developer/doxygen/deal.II/classMatrixFree.html#ad74b79444278dcd6a61ad92756a8c31b',1,'MatrixFree::get_size_info() const '],['http://www.dealii.org/developer/doxygen/deal.II/classMatrixFree.html#ad74b79444278dcd6a61ad92756a8c31b',1,'MatrixFree::get_size_info() const ']]],
-  ['get_5fsmoothing',['get_smoothing',['../class_parsed_grid_generator.html#aaaea6a60b4df3d16e3d8a7b6bcfe8635',1,'ParsedGridGenerator']]],
   ['get_5fsolver_5fnames',['get_solver_names',['http://www.dealii.org/developer/doxygen/deal.II/classSolverSelector.html#af2a9bbcab93bc3bf0831f1b6e06e662d',1,'SolverSelector']]],
   ['get_5fsolver_5fstate',['get_solver_state',['http://www.dealii.org/developer/doxygen/deal.II/classSLEPcWrappers_1_1SolverBase.html#a34995ca49dec96d45c9c8adc1a71b39f',1,'SLEPcWrappers::SolverBase']]],
   ['get_5fsource_5fgrid',['get_source_grid',['http://www.dealii.org/developer/doxygen/deal.II/classInterGridMap.html#afe47b407b7cf141fe82312cabf85452b',1,'InterGridMap']]],
