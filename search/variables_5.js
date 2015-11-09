@@ -33,6 +33,7 @@ var searchData=
   ['eps_5fflags_5f1',['eps_flags_1',['http://www.dealii.org/developer/doxygen/deal.II/classGridOut.html#a2a4cde0d530816c3ce19d1c25dcfd7ba',1,'GridOut']]],
   ['eps_5fflags_5f2',['eps_flags_2',['http://www.dealii.org/developer/doxygen/deal.II/classGridOut.html#a16d4c7a32485f90a6fc536a4c090c0c7',1,'GridOut']]],
   ['eps_5fflags_5f3',['eps_flags_3',['http://www.dealii.org/developer/doxygen/deal.II/classGridOut.html#a8a4cf5a0d3f28d473ce0067f2837cd3b',1,'GridOut']]],
+  ['error_5ffile_5fformat',['error_file_format',['../class_error_handler.html#add5790c81437a1c8a700f2c5ff34cb31',1,'ErrorHandler']]],
   ['euler',['Euler',['http://www.dealii.org/developer/doxygen/deal.II/group__functions.html#gga8e3a3152c1a97076b961dcb35a3bb36babf0b91e6181d44127eb8d23ff080f286',1,'AutoDerivativeFunction']]],
   ['euler_5fdof_5fhandler',['euler_dof_handler',['http://www.dealii.org/developer/doxygen/deal.II/classMappingFEField.html#a04458436195026beeadb0fb82b4df5cb',1,'MappingFEField::euler_dof_handler()'],['http://www.dealii.org/developer/doxygen/deal.II/classMappingQEulerian.html#a492abd42f3e34b68fb30881cf41157ad',1,'MappingQEulerian::euler_dof_handler()']]],
   ['euler_5ftransform_5fvectors',['euler_transform_vectors',['http://www.dealii.org/developer/doxygen/deal.II/classMappingQ1Eulerian.html#acc67faa2e935043fac23b57a6d4d6686',1,'MappingQ1Eulerian']]],
@@ -48,5 +49,6 @@ var searchData=
   ['exterior',['exterior',['http://www.dealii.org/developer/doxygen/deal.II/classMeshWorker_1_1DoFInfoBox.html#ac132b4affba4bdb3c4c21c937b50d694',1,'MeshWorker::DoFInfoBox']]],
   ['exterior_5fface_5favailable',['exterior_face_available',['http://www.dealii.org/developer/doxygen/deal.II/classMeshWorker_1_1DoFInfoBox.html#aa83e950e0f9451404651ca1dfb32e448',1,'MeshWorker::DoFInfoBox']]],
   ['external_5fdata',['external_data',['http://www.dealii.org/developer/doxygen/deal.II/structDataOutBase_1_1PovrayFlags.html#a2f18e4a6835debc48914148e27f0c21e',1,'DataOutBase::PovrayFlags']]],
-  ['extra_5foff_5fdiagonals',['extra_off_diagonals',['http://www.dealii.org/developer/doxygen/deal.II/classSparseLUDecomposition_1_1AdditionalData.html#a4f50008942dbfef89b34404e47ebde2c',1,'SparseLUDecomposition::AdditionalData']]]
+  ['extra_5foff_5fdiagonals',['extra_off_diagonals',['http://www.dealii.org/developer/doxygen/deal.II/classSparseLUDecomposition_1_1AdditionalData.html#a4f50008942dbfef89b34404e47ebde2c',1,'SparseLUDecomposition::AdditionalData']]],
+  ['extras',['extras',['../class_error_handler.html#af378b4af7c3b4ec50fba891c5a2d6a6a',1,'ErrorHandler']]]
 ];

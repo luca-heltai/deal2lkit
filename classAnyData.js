@@ -31,5 +31,8 @@ var classAnyData =
     [ "try_read", "http://www.dealii.org/developer/doxygen/deal.II/classAnyData.html#a38be2eed2787a24f4244fc7fa2b950be", null ],
     [ "try_read", "http://www.dealii.org/developer/doxygen/deal.II/classAnyData.html#a7085d6aa7ecb8af6381c93b58e7d37ac", null ],
     [ "try_read_ptr", "http://www.dealii.org/developer/doxygen/deal.II/classAnyData.html#aaa0aa31b178e9845dea83cd0d9157718", null ],
-    [ "try_read_ptr", "http://www.dealii.org/developer/doxygen/deal.II/classAnyData.html#a4fbd506ef26e3038a7d72202a827e9ee", null ]
+    [ "try_read_ptr", "http://www.dealii.org/developer/doxygen/deal.II/classAnyData.html#a4fbd506ef26e3038a7d72202a827e9ee", null ],
+    [ "data", "http://www.dealii.org/developer/doxygen/deal.II/classAnyData.html#ade3026b203dfcab9a6545dffbc8a70a0", null ],
+    [ "mydata", "http://www.dealii.org/developer/doxygen/deal.II/classAnyData.html#a266e37fd9654f946ff70bae3f71107b3", null ],
+    [ "names", "http://www.dealii.org/developer/doxygen/deal.II/classAnyData.html#ae6252dec3963b0a0a35b89ebc7969576", null ]
 ];
