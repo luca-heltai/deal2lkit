@@ -22,7 +22,6 @@
 #include <deal.II/base/exceptions.h>
 #include <deal.II/base/timer.h>
 #include <deal.II/fe/fe.h>
-#include <deal.II/base/std_cxx11/shared_ptr.h>
 
 #include <typeinfo>
 #include <cxxabi.h>
@@ -55,7 +54,8 @@ DEAL_II_ENABLE_EXTRA_DIAGNOSTICS
 
 #include <deal.II/base/index_set.h>
 using namespace dealii;
-using std_cxx11::shared_ptr;
+using std::shared_ptr;
+using std::unique_ptr;
 
 
 D2K_NAMESPACE_OPEN
@@ -63,61 +63,6 @@ D2K_NAMESPACE_OPEN
 
 /** Demangle c++ names. */
 std::string demangle(const char *name);
-
-/**
- * This function collects some time utilities.
- *
- *  All measures are stored in seconds.
- *  Usage: get_start_time() should be used before get_end_time() and viceversa.
- */
-class TimeUtilities
-{
-public:
-
-  TimeUtilities()
-    :
-    status(true),
-    times()
-  {}
-
-  /**
-   * It freezes the thread for t milliseconds.
-   */
-  void sleep(unsigned int t);
-
-  /**
-   * It sets the start time for a measure.
-   */
-  void get_start_time();
-
-  /**
-   * It sets the end time for a measure.
-   */
-  void get_end_time();
-
-  /**
-   * It returns the number of measures done
-   */
-  int get_num_measures();
-
-  /**
-   * An overload of the operator [] is provided to access to all measures.
-   */
-  double &operator[] (const unsigned int num)
-  {
-    AssertThrow( num < times.size(),
-                 ExcMessage("Invalind number num. It is higher than the number of times.") );
-
-    return times[num];
-  };
-
-private:
-  bool status; // This is used to check whether we are taking a start time or
-  // and end time.
-  std::chrono::high_resolution_clock::time_point t_start;
-  std::chrono::high_resolution_clock::time_point t_end;
-  std::vector<double> times;
-};
 
 /**
  * This function copy the text contained in @p in_file to the file
@@ -468,7 +413,7 @@ std::string type(const T &t)
  *
  *  @code
  *
- *  std_cxx11::shared_ptr<MyClass> my_ptr;
+ *  std::shared_ptr<MyClass> my_ptr;
  *
  *  ...
  *
@@ -490,7 +435,7 @@ SP(T *t)
  *
  *  @code
  *
- *  std_cxx11::shared_ptr<const MyClass> my_ptr;
+ *  std::shared_ptr<const MyClass> my_ptr;
  *
  *  ...
  *  const MyClass * p = new MyClass;
@@ -504,6 +449,51 @@ SP(const T *t)
 {
   return shared_ptr<const T>(t);
 }
+
+/**
+ *  Construct a unique pointer to a non const class T. This is a
+ *  convenience function to simplify the construction of unique
+ *  pointers
+ *
+ *  @code
+ *
+ *  std::unique_ptr<MyClass> my_ptr;
+ *
+ *  ...
+ *
+ *  my_ptr = UP(new MyClass);
+ *
+ *  @endcode
+ */
+template <class T>
+inline unique_ptr<T>
+UP(T *t)
+{
+  return unique_ptr<T>(t);
+}
+
+/**
+ *  Construct a unique pointer to a const class T. This is a
+ *  convenience function to simplify the construction of unique
+ *  pointers (which should replace dealii::SmartPointers):
+ *
+ *  @code
+ *
+ *  std::unique_ptr<const MyClass> my_ptr;
+ *
+ *  ...
+ *  const MyClass * p = new MyClass;
+ *  my_ptr = UP(p);
+ *
+ *  @endcode
+ */
+template <class T>
+inline unique_ptr<const T>
+UP(const T *t)
+{
+  return unique_ptr<const T>(t);
+}
+
 
 /**
  *  A simple class to shift a vector by a scalar.
