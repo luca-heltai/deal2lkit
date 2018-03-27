@@ -111,6 +111,9 @@ void ParsedZeroAverageConstraints<dim,spacedim>::declare_parameters(ParameterHan
                     "instead of specifying each component number");
 
     }
+  else
+    _component_names = Utilities::split_string_list(str_component_names);
+
   add_parameter(prm, &components, "Zero average on whole domain", str_components,
                 Patterns::List(Patterns::Anything(),0,n_components,","),
                 "Pattern to be used: "
